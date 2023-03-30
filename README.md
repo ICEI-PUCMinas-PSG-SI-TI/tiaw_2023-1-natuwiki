@@ -5,7 +5,7 @@ A Plataforma NatuWIki irá auxiliar moradores e turistas que desejam conhecer a 
 ## Alunos integrantes da equipe
 
 * Gabriel Hubner Bastos Athaide
-* Nome completo do aluno 2
+* Danielle Santos Torres
 * Nome completo do aluno 3
 * Nome completo do aluno 4
 * Nome completo do aluno 4
