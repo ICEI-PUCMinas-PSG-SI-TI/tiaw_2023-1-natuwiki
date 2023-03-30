@@ -6,7 +6,7 @@ A Plataforma NatuWIki irá auxiliar moradores e turistas que desejam conhecer a 
 
 * Gabriel Hubner Bastos Athaide
 * Danielle Santos Torres
-* Nome completo do aluno 3
+* Pedro Ribeiro Canuto
 * Nome completo do aluno 4
 * Nome completo do aluno 4
 * Nome completo do aluno 4
