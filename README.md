@@ -13,8 +13,8 @@ A Plataforma NatuWIki irá auxiliar moradores e turistas que desejam conhecer a 
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* João Caram Santos de Oliveira
+* Gabriel Barbosa da Fonseca
 
 ## Quadro de tarefas
 Coloque aqui o link para acesso do Kanban do projeto, seja ele no GitHub ou em outra plataforma.
