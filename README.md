@@ -9,7 +9,6 @@ A Plataforma NatuWIki irá auxiliar moradores e turistas que desejam conhecer a 
 * Pedro Ribeiro Canuto
 * Davi Martins Freitas de Oliveira Fonseca
 * Nome completo do aluno 4
-* Nome completo do aluno 4
 
 ## Professores responsáveis
 
@@ -17,7 +16,8 @@ A Plataforma NatuWIki irá auxiliar moradores e turistas que desejam conhecer a 
 * Gabriel Barbosa da Fonseca
 
 ## Quadro de tarefas
-Coloque aqui o link para acesso do Kanban do projeto, seja ele no GitHub ou em outra plataforma.
+https://github.com/orgs/ICEI-PUCMinas-PSG-SI-TI/projects/7
+Também acessível na página do repositório > aba Projects > NatuWiki - Kanban Backlog 
 
 ## Instruções para uso
 Coloque aqui as instruções para acessar a página inicial do projeto (caminho completo do arquivo).
