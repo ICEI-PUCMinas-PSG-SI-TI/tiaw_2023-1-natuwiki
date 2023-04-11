@@ -18,8 +18,12 @@
 /*Global - Header inicio*/
 header {
     width: 100%;
-    height: 105px;
+    height: 80px;
     background-color: var(--background-primary);
+}
+
+header img {
+    height: 70px;
 }
 
 header nav {
@@ -101,14 +105,19 @@ footer {
     gap: 100px;
 }
 
-.footer-area h6 {
-    font-weight: lighter;
+.footer-area h3{
+    font-size: 1.5em;
 }
 
-.footer-area a {
+.footer-area h6 {
+    font-weight: lighter;
+    font-size: medium;
+}
+
+.footer-area a, p {
     display: block;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
     color: black;
     padding-top: 5px;
     transition: color .3s;
@@ -116,10 +125,6 @@ footer {
 
 .footer-area a:hover {
     color: var(--hover-primary);
-}
-
-.footer-area p+p {
-    padding-top: 15px;
 }
 
 #rodape-cp {
