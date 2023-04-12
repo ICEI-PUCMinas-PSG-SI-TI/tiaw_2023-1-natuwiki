@@ -1,3 +1,22 @@
-.imagem-sup img{
-    width:100%;
+.imagem-sup img {
+    width: 100%;
+}
+
+.header-dicas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.maislocais {
+    width: 20%;
+}
+.card h4{
+    font-size: 20px;
+    text-align: center;
+}
+.leiamais a p{
+    font-size: 15px;
+}
+.leiamais a{
+    text-decoration: none;
 }

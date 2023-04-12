@@ -140,4 +140,29 @@ footer {
     font-size: 25px;
     padding-right: 10px;
 }
+
 /*Global - Footer fim*/
+.botoes{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 5px;
+    color:var(--background-third);
+    text-decoration: none;
+    border-color: var(--background-third);
+    text-align: center;
+}
+
+.botoes1{
+    border: 1px solid black;
+    border-radius: 100px;
+    color:var(--background-third);
+    text-decoration: none;
+    border-color: var(--background-third);
+    text-align: center;
+    background-color: #52A15A;
+}
+
+.botoes h3{
+    font-size: 23px;
+    padding: 3%;
+}
