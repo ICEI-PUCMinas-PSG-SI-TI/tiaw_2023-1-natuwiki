@@ -50,7 +50,7 @@
     padding: 5px 10px;
     margin-top: 10px;
     border-radius: 5px;
-    height: 150px;
+    height: auto;
   }
 
   .caixa-comentarios h3{
@@ -74,8 +74,7 @@ font-size: small;
     color: var(--background-third);
     border-radius: 10px;
     position:flex;
-    left: 760px;
-    width: 40%;
+    width: 100%;
   }
 
   .caixa-dicas h3{
@@ -98,7 +97,6 @@ font-size: small;
     margin: 10px auto;
 }
 
-
 .caixa-contribua {
     background-color:white;
     border: 1px solid;
@@ -106,11 +104,64 @@ font-size: small;
     color: var(--background-third);
     border-radius: 10px;
     position:flex;
-    left: 760px;
-    width: 40%;
+    width: 100%;
+    margin-bottom: 10%;
   }
+  
 
   .caixa-contribua h3{
     font-style: oblique;
     text-shadow: 1px 1px 2px #000000;
   }
+
+  .pagedown{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,50%);
+    max-width: 1800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .caixa-comentarios{
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+  }
+  .caixa-contribua{
+    grid-column: 2 / 3;
+    grid-row: 3/4;
+  }
+  .caixa-dicas{
+    grid-column: 2 / 3;
+    grid-row: 1/3;
+  }
+  @media screen and (max-width: 768px){
+    .pagedown{
+        display: block;
+        margin: 5%;
+    }
+    .caixa-comentarios{
+        width: 100%;
+    }
+    .caixa-dicas{
+        margin-bottom: 10%;
+    }
+    .header-dicas{
+        display: block;
+    }
+    .maislocais{display: none;
+    }
+    #rodape-inf{
+        display: block;
+        width: auto;
+      }
+      .footer-area{
+        border-bottom: 1px solid var(--background-third);
+        padding: 10px;
+      }
+}
+@media screen and (max-width: 886px){
+.menu-nav{
+    display: none;
+}
+}
