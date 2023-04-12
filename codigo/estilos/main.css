@@ -20,3 +20,97 @@
 .leiamais a{
     text-decoration: none;
 }
+.leiamais.botoes1 {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.botoes h3{
+    font-size: 23px;
+    padding: 3%;
+}
+
+.botoes{
+    margin-bottom: 2%;
+}
+.caixa-comentarios {
+    background-color: var(--background-third);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    position: flex;
+    left: 0px;
+    width: 50%;
+  }
+   
+  .comentario {
+    text-align: left;
+    background-color: white;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 150px;
+  }
+
+  .caixa-comentarios h3{
+    font-style: oblique;
+    text-shadow: 1px 1px 2px #000000;
+  }
+  
+ .maiscomentario h3{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 0%;
+    text-align: right;
+font-size: small;
+ }
+
+ .caixa-dicas {
+    background-color:white;
+    border: 1px solid;
+    padding: 10px;
+    color: var(--background-third);
+    border-radius: 10px;
+    position:flex;
+    left: 760px;
+    width: 40%;
+  }
+
+  .caixa-dicas h3{
+    font-style: oblique;
+    text-shadow: 1px 1px 2px #000000;
+  }
+.dicas{
+    border-bottom: 1px solid black;
+}
+
+.maisdicas a p{
+    font-size: 15px;
+}
+.maisdicas a{
+    text-decoration: none;
+}
+.maisdicas.botoes1 {
+    width: 50%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+
+.caixa-contribua {
+    background-color:white;
+    border: 1px solid;
+    padding: 10px;
+    color: var(--background-third);
+    border-radius: 10px;
+    position:flex;
+    left: 760px;
+    width: 40%;
+  }
+
+  .caixa-contribua h3{
+    font-style: oblique;
+    text-shadow: 1px 1px 2px #000000;
+  }
