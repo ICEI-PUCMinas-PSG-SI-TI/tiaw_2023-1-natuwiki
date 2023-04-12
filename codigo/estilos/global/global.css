@@ -142,6 +142,7 @@ footer {
 }
 
 /*Global - Footer fim*/
+
 .botoes{
     border: 1px solid black;
     border-radius: 5px;
@@ -162,3 +163,16 @@ footer {
     background-color: #52A15A;
 }
 
+@media screen and (max-width: 768px) {
+    
+  #rodape-inf {
+    display: block;
+    width: auto;
+  }
+
+  .footer-area {
+    border-bottom: 1px solid var(--background-third);
+    padding: 10px;
+  }
+  
+}

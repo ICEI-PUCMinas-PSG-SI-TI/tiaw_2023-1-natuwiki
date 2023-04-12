@@ -1,167 +1,177 @@
 .imagem-sup img {
-    width: 100%;
+  width: 100%;
 }
 
 .header-dicas {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .maislocais {
-    width: 20%;
+  width: 20%;
 }
-.card h4{
-    font-size: 20px;
-    text-align: center;
+
+.card h4 {
+  font-size: 20px;
+  text-align: center;
 }
-.leiamais a p{
-    font-size: 15px;
+
+.leiamais a p {
+  font-size: 15px;
 }
-.leiamais a{
-    text-decoration: none;
+
+.leiamais a {
+  text-decoration: none;
 }
+
 .leiamais.botoes1 {
-    width: 50%;
-    text-align: center;
-    margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.botoes h3{
-    font-size: 23px;
-    padding: 3%;
+.botoes h3 {
+  font-size: 23px;
+  padding: 3%;
 }
 
-.botoes{
-    margin-bottom: 2%;
+.botoes {
+  margin-bottom: 2%;
 }
+
 .caixa-comentarios {
-    background-color: var(--background-third);
-    padding: 20px;
-    color: white;
-    border-radius: 10px;
-    position: flex;
-    left: 0px;
-    width: 50%;
-  }
-   
-  .comentario {
-    text-align: left;
-    background-color: white;
-    padding: 5px 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    height: auto;
-  }
-
-  .caixa-comentarios h3{
-    font-style: oblique;
-    text-shadow: 1px 1px 2px #000000;
-  }
-  
- .maiscomentario h3{
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
-    padding: 0%;
-    text-align: right;
-font-size: small;
- }
-
- .caixa-dicas {
-    background-color:white;
-    border: 1px solid;
-    padding: 10px;
-    color: var(--background-third);
-    border-radius: 10px;
-    position:flex;
-    width: 100%;
-  }
-
-  .caixa-dicas h3{
-    font-style: oblique;
-    text-shadow: 1px 1px 2px #000000;
-  }
-.dicas{
-    border-bottom: 1px solid black;
+  background-color: var(--background-third);
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  position: flex;
+  left: 0px;
+  width: 50%;
 }
 
-.maisdicas a p{
-    font-size: 15px;
+.comentario {
+  text-align: left;
+  background-color: white;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  height: auto;
 }
-.maisdicas a{
-    text-decoration: none;
+
+.caixa-comentarios h3 {
+  font-style: oblique;
+  text-shadow: 1px 1px 2px #000000;
 }
+
+.maiscomentario h3 {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 0%;
+  text-align: right;
+  font-size: small;
+}
+
+.caixa-dicas {
+  background-color: white;
+  border: 1px solid;
+  padding: 10px;
+  color: var(--background-third);
+  border-radius: 10px;
+  position: flex;
+  width: 100%;
+}
+
+.caixa-dicas h3 {
+  font-style: oblique;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.dicas {
+  border-bottom: 1px solid black;
+}
+
+.maisdicas a p {
+  font-size: 15px;
+}
+
+.maisdicas a {
+  text-decoration: none;
+}
+
 .maisdicas.botoes1 {
-    width: 50%;
-    text-align: center;
-    margin: 10px auto;
+  width: 50%;
+  text-align: center;
+  margin: 10px auto;
 }
 
 .caixa-contribua {
-    background-color:white;
-    border: 1px solid;
-    padding: 10px;
-    color: var(--background-third);
-    border-radius: 10px;
-    position:flex;
+  background-color: white;
+  border: 1px solid;
+  padding: 10px;
+  color: var(--background-third);
+  border-radius: 10px;
+  position: flex;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+
+.caixa-contribua h3 {
+  font-style: oblique;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.pagedown {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 50%);
+  max-width: 1800px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.caixa-comentarios {
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+}
+
+.caixa-contribua {
+  grid-column: 2 / 3;
+  grid-row: 3/4;
+}
+
+.caixa-dicas {
+  grid-column: 2 / 3;
+  grid-row: 1/3;
+}
+
+@media screen and (max-width: 768px) {
+  .pagedown {
+    display: block;
+    margin: 5%;
+  }
+
+  .caixa-comentarios {
     width: 100%;
+  }
+
+  .caixa-dicas {
     margin-bottom: 10%;
   }
-  
 
-  .caixa-contribua h3{
-    font-style: oblique;
-    text-shadow: 1px 1px 2px #000000;
+  .header-dicas {
+    display: block;
   }
 
-  .pagedown{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3,50%);
-    max-width: 1800px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .caixa-comentarios{
-    grid-column: 1 / 3;
-    grid-row: 1 / 4;
-  }
-  .caixa-contribua{
-    grid-column: 2 / 3;
-    grid-row: 3/4;
-  }
-  .caixa-dicas{
-    grid-column: 2 / 3;
-    grid-row: 1/3;
-  }
-  @media screen and (max-width: 768px){
-    .pagedown{
-        display: block;
-        margin: 5%;
-    }
-    .caixa-comentarios{
-        width: 100%;
-    }
-    .caixa-dicas{
-        margin-bottom: 10%;
-    }
-    .header-dicas{
-        display: block;
-    }
-    .maislocais{display: none;
-    }
-    #rodape-inf{
-        display: block;
-        width: auto;
-      }
-      .footer-area{
-        border-bottom: 1px solid var(--background-third);
-        padding: 10px;
-      }
-}
-@media screen and (max-width: 886px){
-.menu-nav{
+  .maislocais {
     display: none;
+  }
 }
+
+@media screen and (max-width: 886px) {
+  .menu-nav {
+    display: none;
+  }
 }
