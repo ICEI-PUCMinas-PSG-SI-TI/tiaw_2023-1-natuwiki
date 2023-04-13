@@ -44,13 +44,34 @@
             </div>
         </nav>
     </header>
-    <!--
-        Seção incluída somente para ter um espaço entre o header e o footer,
-        Quando forem mexer, excluam esse comentário e mudem a seção como necessitarem,
-        por gentileza.
-    -->
-    <main style="margin: 500px 500px">
-        <p>INCLUIR OS ELEMENTOS DA PÁGINA NESSE ESPAÇO. NÃO MUDAR O HEADER E O FOOTER</p>
+ 
+    <main>
+        <div id="form">
+            <form action="">
+              <p class="title font-weight-bold">Cadastrar</p>
+              <label for="username"> <p class="name font-weight-normal">Nome</p></label>
+              <div class="input">
+                  <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                  <input id="username" name="username" placeholder="Username" type="text"></input>
+              </div>
+      
+              <label for="email"><p class="name font-weight-normal">Email</p></label></label>
+              <div class="input">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <input id="email" name="email" placeholder="Email" type="text">
+              </div>
+      
+              <label for="senha"><p class="name font-weight-normal">Senha</p></label></label>
+              <div class="input">
+                  <i class="fa fa-lock" aria-hidden="true"></i>
+                  <input id="senha" name="senha" placeholder="Senha" type="text">
+              </div>
+      
+              <div class="botoes1" id="btn">
+                  <button type="submit">Cadastrar</button>
+              </div>
+            </form>
+          </div>
     </main>
 
     <footer>
