@@ -1,14 +1,12 @@
 .menu .menu-profile1 {
   display: none;
 }
+
 .imagem-sup img {
-  width: 100%;
   width: 100%;
 }
 
 .header-dicas {
-  display: flex;
-  justify-content: space-between;
   display: flex;
   justify-content: space-between;
 }
@@ -54,6 +52,7 @@
   left: 0px;
   width: 50%;
 }
+
 .comentario {
   text-align: left;
   background-color: white;
@@ -294,4 +293,7 @@
     z-index: -10;
   }
 }
+
+
+
 /* fim menu mobile */
