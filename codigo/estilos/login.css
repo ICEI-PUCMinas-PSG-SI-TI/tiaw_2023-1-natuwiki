@@ -1,0 +1,49 @@
+.container{
+margin-top: 7%;
+height: 100vh;
+}
+
+p{
+    font-size: medium;
+}
+
+.dados{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.form{
+    margin: 8% 20%;
+    display: flex;
+}
+
+.content{
+    border: 1px solid var(--background-third);
+    background-color: var(--background-primary);
+    width: 50%;
+    height: 65%;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 23%;
+}
+
+.redes-sociais{
+    justify-content: center;
+    display: flex;
+    font-size: x-large;
+    margin-top: 8%;
+}
+
+.entrar{
+    margin-top: 4%;
+    border-radius: 100px;
+    width: 50%;
+    align-self: center;
+    background-color: var(--background-third);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
