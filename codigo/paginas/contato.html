@@ -22,19 +22,25 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav>
             <a href="/codigo/index.html"><img src="../img/logo_full.svg" alt="Logotipo NatuWiki"></a>
-
             <div class="menu-nav">
-                <ul>
-                    <li><a href="cadastro.html">REGISTRAR</a></li>
-                    <li><a href="contato.html">CONTATO</a></li>
-                    <li><a href="sobre.html">SOBRE NÓS</a></li>
+                <input type="checkbox" id="menuToggle">
+                <label for="menuToggle" class="menu-icon">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times-circle"></i>
+                </label>
+                <ul class="menu">
+                    <li><a href="./cadastro.html">REGISTRAR</a></li>
+                    <li><a href="./contato.html">CONTATO</a></li>
+                    <li><a href="./sobre.html">SOBRE NÓS</a></li>
+                    <li><a class="menu-profile1" href="./login.html">LOGIN</a></li>
                     <li>
-                        <a class="menu-profile" href="login.html"><i class="fa-solid fa-user"></i></a>
+                        <a class="menu-profile" href="./login.html"><i class="fa-solid fa-user"></i></a>
                     </li>
                 </ul>
+
             </div>
         </nav>
     </header>
