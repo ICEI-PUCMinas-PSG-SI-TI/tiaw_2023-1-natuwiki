@@ -8,7 +8,7 @@ A Plataforma NatuWIki irá auxiliar moradores e turistas que desejam conhecer a 
 * Danielle Santos Torres
 * Pedro Ribeiro Canuto
 * Davi Martins Freitas de Oliveira Fonseca
-* Nome completo do aluno 4
+* Gabriel santos da Silva
 
 ## Professores responsáveis
 
@@ -17,7 +17,8 @@ A Plataforma NatuWIki irá auxiliar moradores e turistas que desejam conhecer a 
 
 ## Quadro de tarefas
 https://github.com/orgs/ICEI-PUCMinas-PSG-SI-TI/projects/7
+
 Também acessível na página do repositório > aba Projects > NatuWiki - Kanban Backlog 
 
 ## Instruções para uso
-Coloque aqui as instruções para acessar a página inicial do projeto (caminho completo do arquivo).
+tiaw_2023-1-natuwiki/codigo/index.html
