@@ -50,6 +50,13 @@
     <div>
         <div class="imagem-sup">
             <img src="img/Pagina Principal/Serra da canastra(mg).jpg" alt="Serra da Canastra(MG)">
+            <form class="pesquisa-group" action="" method="post">
+                <h3>JÁ SABE SEU DESTINO ?</h3>
+                <div class="d-flex">
+                    <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquise lugares">
+                    <button class="botoes3" type="submit">Pesquisar</button>
+                </div>
+            </form>
         </div>
     </div>
     <main style="margin: 0px 8%">
@@ -94,7 +101,7 @@
                         mata e no final
                         se refrescar em uma cachoeira com queda d'água de mais de 30 metros...</p>
                     <i class="fa fa-map-marker d-flex">
-                        <p class="local-tag">Vale de Altamira - Nova União (MG)</p>
+                        <p class="px-2">Vale de Altamira - Nova União (MG)</p>
                     </i>
                     <div class="leiamais botoes1">
                         <a href="#">
@@ -133,7 +140,7 @@
                         O Chalé Canto da Siriema oferece uma acomodação aconchegante, romântica e com uma vista linda da
                         mata que circunda o local...</p>
                     <i class="fa fa-map-marker d-flex">
-                        <p class="local-tag">Lavras Novas (MG)</p>
+                        <p class="px-2">Lavras Novas (MG)</p>
                     </i>
                     <div class="leiamais botoes1">
                         <a href="#">
@@ -174,7 +181,7 @@
                         conhecer parte da famosa serra do cipó e no final desfrutar de uma cachoeira de tirar o fôlego.
                     </p>
                     <i class="fa fa-map-marker d-flex">
-                        <p class="local-tag">Vale de Altamira - Nova União (MG)</p>
+                        <p class="px-2">Vale de Altamira - Nova União (MG)</p>
                     </i>
                     <div class="leiamais botoes1">
                         <a href="#">
@@ -217,7 +224,7 @@
                         o parque da cachoeira oferece uma ótima infraestrutura com piscinas, banheiros e área
                         de churrasco e tudo isso a 1 hora do centro de BH.</p>
                     <i class="fa fa-map-marker d-flex">
-                        <p class="local-tag">Vale de Altamira - Nova União (MG)</p>
+                        <p class="px-2">Vale de Altamira - Nova União (MG)</p>
                     </i>
                     <div class="leiamais botoes1">
                         <a href="#">
@@ -231,9 +238,12 @@
                 <!-- Comentarios Relevantes -->
                 <div class="pagedown">
                         <div class="caixa-comentarios mb-5">
-                            <i class="fas fa-fire d-flex"></i>
-                            <h3>Últimos comentários relevantes</h3>
+                         <section class="d-flex">
+                            <i class="fas fa-fire"></i>
+                            <h5>Últimos comentários relevantes</h5>
+                         </section>
                             <div class="comentario mb-3">
+                                <i class="fa-solid fa-user d-flex" style="color:black"><p class="px-2">Angela Martin</p></i>
                                 <p class="titulo-comentario fw-bold mb-0">Visita ao parque da cachoeira</p>
                                 <p>Fiz uma visita com minha família ao parque da cachoeira em Congonhas no último dia
                                     20.
@@ -243,6 +253,7 @@
                                     própria churrasqueira na área de camping. Preço do camping é bastante atrativo.
                             </div>
                             <div class="comentario mb-3">
+                                <i class="fa-solid fa-user d-flex"><p class="px-2">Nivaldo Lima</p></i>
                                 <p class="titulo-comentario fw-bold mb-0">Trilha até cachoeira Alta</p>
                                 <p>
                                     Fiz o passei até a cachoeira alta em Nova União e foi um passeio sensacional.
@@ -254,6 +265,7 @@
                                 </p>
                             </div>
                             <div class="comentario mb-3">
+                                <i class="fa-solid fa-user d-flex"><p class="px-2">Anna Beatriz</p></i>
                                 <p class="titulo-comentario fw-bold mb-0"> Chalé Canto da Siriema </p>
                                 <p>
                                     Fui com minha namorada para esse chalé em busca de descanso e paz e ficamos
@@ -265,26 +277,23 @@
                                     deixando a paisagem maravilhosa, recomendo de mais.
                                 </p>
                             </div>
-                            <a class="botoes maiscomentario" href="#">
-                                <h3> Vejo outros comentários </h3>
+                            <a class="maiscomentario" href="#">
+                                <h3> Ver outros comentários </h3>
                             </a>
                         </div>
                         <div class="caixa-dicas">
-                            <i class="fa fa-book"></i>
-                            <h3> Acesse nossas dicas de viagem!</h3>
+                            <h5> Acesse nossas dicas de viagem!</h5>
                             <div class="dicas">
-                                <p><p class="fw-bold">por Pedro Canuto</p>
-                                Área de camping familiar</p>
+                                <p class="fw-bold">por Pedro Canuto</p>
+                                <a href="#">Área de camping familiar</a>
                             </div>
                             <div class="dicas">
-                                <p>
                                 <p class="fw-bold">por Davi Martins.</p>
-                                Lagoa para pesca e acampamento</p>
+                                <a href="#">Lagoa para pesca e acampamento</a>
                             </div>
                             <div class="dicas">
-                                <p>
                                 <p class="fw-bold">por Gabriel Hubner.</p>
-                                Passeio de quadriciclo e motocross</p>
+                                <a href="#">Passeio de quadriciclo e motocross</a>
                             </div>
                             <div class="maisdicas botoes1">
                                 <a href="#">
@@ -293,7 +302,7 @@
                             </div>
                 </div>
                 <div class="caixa-contribua">
-                    <h3 class="Contribua"> Contribua com a nossa comunidade!</h3>
+                    <h5 class="Contribua"> Contribua com a nossa comunidade!</h5>
                         <p class="fw-semibold fs-5">Contribua com os amantes do ecoturismo e cadastre os roteiros e os locais
                             que você ama!</p>
                     <div class="maisdicas botoes1">

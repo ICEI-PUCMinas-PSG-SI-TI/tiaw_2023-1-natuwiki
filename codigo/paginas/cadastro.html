@@ -44,34 +44,139 @@
             </div>
         </nav>
     </header>
- 
+
     <main>
         <div id="form">
+            <p class="title font-weight-bold">Cadastrar</p>
             <form action="">
-              <p class="title font-weight-bold">Cadastrar</p>
-              <label for="username"> <p class="name font-weight-normal">Nome</p></label>
-              <div class="input">
-                  <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                  <input id="username" name="username" placeholder="Username" type="text"></input>
-              </div>
-      
-              <label for="email"><p class="name font-weight-normal">Email</p></label></label>
-              <div class="input">
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
-                  <input id="email" name="email" placeholder="Email" type="text">
-              </div>
-      
-              <label for="senha"><p class="name font-weight-normal">Senha</p></label></label>
-              <div class="input">
-                  <i class="fa fa-lock" aria-hidden="true"></i>
-                  <input id="senha" name="senha" placeholder="Senha" type="text">
-              </div>
-      
-              <div class="botoes1" id="btn">
-                  <button type="submit">Cadastrar</button>
-              </div>
+                <p class="title font-weight-bold">Dados Pessoais</p>
+                <div class="caixa-pessoal">
+                    <div class="input">
+                        <label class="d-block" for="username">
+                            <p class="name font-weight-normal">Nome</p>
+                        </label>
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        <input id="username" name="username" placeholder=" Digite seu nome" type="text"></input>
+                    </div>
+
+                    <div class="input">
+                        <label class="d-block" for="username">
+                            <p class="name font-weight-normal">Sobrenome</p>
+                        </label>
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        <input id="username" name="username" placeholder=" Digite seu Sobrenome" type="text"></input>
+                    </div>
+
+                    <div class="input">
+                        <label class="d-block" for="username">
+                            <p class="name font-weight-normal">Cidade/Residência</p>
+                        </label>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <input id="username" name="username" placeholder=" Digite a Cidade" type="text"></input>
+                    </div>
+
+                    <div class="input">
+                        <label class="d-block" for="number">
+                            <p class="name font-weight-normal">Celular</p>
+                        </label>
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                        <input id="number" name="number" placeholder=" (xx) xxxx-xxxx" type="tel"></input>
+                    </div>
+
+                    <div class="input">
+                        <label class="d-block" for="email">
+                            <p class="name font-weight-normal">E-mail</p>
+                        </label></label>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input id="email" name="email" placeholder=" E-mail" type="email">
+                    </div>
+
+                    <div class="input">
+                        <label class="d-block" for="senha">
+                            <p class="name font-weight-normal">Senha</p>
+                        </label></label>
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" id="senha" name="senha" placeholder=" Digite sua senha" type="text">
+                    </div>
+
+                    <div class="input">
+                        <label class="d-block" for="senha">
+                            <p class="name font-weight-normal">Confirma Senha</p>
+                        </label></label>
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" id="senha" name="senha" placeholder=" Digite sua senha" type="text">
+                    </div>
+
+                    <div class="input">
+                        <p class="name font-weight-normal">Casado(a) ?</p>
+                        <div class="d-flex">
+                            <select name="" id="">
+                                <option value="">Sim</option>
+                                <option value="">Não</option>
+                                <option value="">Namorando</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input">
+                        <p class="name font-weight-normal">Filhos</p>
+                        <div class="d-flex">
+                            <select name="" id="">
+                                <option value="">Não</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4 ou mais</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="title font-weight-bold">Suas preferências</p>
+                <div class="caixa-pessoal">
+
+                    <div class="input">
+                        <label class="d-block" for="caixa-nivel">
+                            <p class="name font-weigth-normal"> Nível de Experiência com a <br>Natureza</label></p>
+                        <select name="caixa-nivel" id="caixa-nivel" class="w-75">
+                            <option value="">Baixo</option>
+                            <option value="">Médio</option>
+                            <option value="">Alto</option>
+                        </select>
+                    </div>
+
+                    <div class="input">
+                        <label class="d-block" for="username">
+                            <p class="name font-weight-normal">Destinos favoritos</p>
+                        </label>
+                        <select multiple name="" id="" class="w-75">
+                            <option value="">Cachoeira</option>
+                            <option value="">Camping</option>
+                            <option value="">Trilha</option>
+                            <option value="">Esportes radicais</option>
+                            <option value="">Acomodações</option>
+                        </select>
+
+                    </div>
+
+                    <div class="input">
+                        <label class="d-block" for="username">
+                            <p class="name font-weight-normal">Meio de Transporte</p>
+                        </label>
+                        <select multiple name="" id="" class="w-75">
+                            <option value="">Carro</option>
+                            <option value="">Moto</option>
+                            <option value="">Transporte público</option>
+                            <option value="">Bicicleta</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="botoes1 shadow p-3 mb-5" id="btn">
+                    <button type="submit">Cadastrar</button>
+                </div>
             </form>
-          </div>
+        </div>
     </main>
 
     <footer>
