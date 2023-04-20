@@ -209,12 +209,14 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width:919px) {
+@media screen and (min-width: 769px) and (max-width:950px) {
   .maislocais{
     display: block;
     width: 50%;
   }
-  
+  .imagem-sup{
+    margin-top: 5%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -250,7 +252,7 @@
   }
 
   .imagem-sup{
-    margin-top: 80px;
-    z-index: -1;
+    margin-top: 10%;
   }
+
 }

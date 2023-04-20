@@ -5,9 +5,10 @@
     width: 70%;
     align-items: center;
     color: #2b344b;
-    animation: iniciar 1.6s ease-out;
+    animation: iniciar .7s ease-out forwards;
     pointer-events: all;
     background-color: var(--background-primary);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .form-check{
@@ -83,18 +84,21 @@
         z-index:-10;
 }
 }
-/*
+
 @keyframes iniciar {
     0% {
-        top: -20%;
-        opacity: 0;
-        pointer-events: none;
-
+       opacity: 0;
+       transform: scale(0.9);
     }
 
     100% {
-        top: 50%;
-        opacity: 100%;
-        pointer-events: all;
+       opacity: 1;
+       transform: scale(1);
     }
-}*/
+}
+
+@media screen and (max-width: 1120px){
+    .caixa-pessoal{
+        display: block;
+    }
+}
