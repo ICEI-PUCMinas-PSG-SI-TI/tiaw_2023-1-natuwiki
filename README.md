@@ -10,6 +10,17 @@ A Plataforma NatuWIki irá auxiliar moradores e turistas que desejam conhecer a 
 * Davi Martins Freitas de Oliveira Fonseca
 * Gabriel santos da Silva
 
+## Sprint 1 (15 pontos)
+### Documentação
+**ATENÇÃO: o documento "docs/relatorio/Relatorio Tecnico - TEMPLATE.md" está vazio. Este é o documento obrigatório onde deve constar toda a especificação do projeto. A nota desta parte (3 pontos) está zerada até que isso seja resolvido**
+- Folha de detalhamento do problema 
+- Persona(s)
+- Histórias de usuários prioritárias (pelo menos 3)
+- Wireframes apresentados no vídeo.
+
+### Observações sobre a apresentação 
+Bom vídeo. Atenção para o volume do áudio na gravação (dica: após gravar, veja a apresentação sem fone de ouvido para ver se está audível.) A parte final ficou um pouco confusa, confundindo personas e histórias de usuários. Correram o risco de fazer o projeto parecer um "juntado de retalhos", cada pedaço atendendo a um perfil e não a outros.
+
 ## Professores responsáveis
 
 * João Caram Santos de Oliveira
