@@ -45,17 +45,14 @@
         </nav>
     </header>
 
-    <!--
-        Seção incluída somente para ter um espaço entre o header e o footer,
-        Quando forem mexer, excluam esse comentário e mudem a seção como necessitarem,
-        por gentileza.
-    -->
     <main>
+        
         <section id="contato-form">
-            <h1> NatuWiki agradece seu contato.</h1>
-            <h3>Como podemos te ajudar?</h3>
-            <form action="https://api.staticforms.xyz/submit" method="post"></form>
-
+            <div class="cabecalho">
+                <h1> NatuWiki agradece seu contato.</h1>
+                <h3>Como podemos te ajudar?</h3>
+                <form action="https://api.staticforms.xyz/submit" method="post"></form>
+            </div>
             <div class="inputs">
                 <div class="input-block">
                     <label for="name">Nome</label>
@@ -73,11 +70,12 @@
                 </div>
             </div>
 
-            <button type="submit">Enviar</button>
-            <input type="hidden" name="accessKey" value="633e3246-bec3-4a5c-bb41-ef76e756ffe7">
-            <input type="hidden" name="redirectTo" value="contato2.html">
+            <div class="botoes1 shadow p-3 mb-5" id="btn">
+                <button type="submit">Enviar</button>
+            </div>
 
         </section>
+    
 
 
     </main>
