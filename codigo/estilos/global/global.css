@@ -295,9 +295,6 @@ footer {
     height: 100%;
   }
 
-  .card {
-    z-index: -10;
-  }
 }
 /* fim menu mobile */
 
