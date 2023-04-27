@@ -207,6 +207,10 @@
   .maislocais2{
     display: none;
   }
+
+  .pesquisa-rapida1{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width:950px) {
@@ -222,7 +226,6 @@
 @media screen and (max-width: 768px) {
   .pagedown {
     display: block;
-    margin: 5%;
   }
 
   .caixa-comentarios {
@@ -253,6 +256,40 @@
 
   .imagem-sup{
     margin-top: 10%;
+    width: 100%;
+  }
+
+  .pesquisa-rapida{
+    display: none;
+  }
+
+  .pesquisa-rapida1{
+    text-align: center;
+    border-bottom: 1px solid var(--background-third);
+    margin: 3%;
+    padding-bottom: 3%;
+    border-width: 100%;
+  }
+
+  .pesquisa-rapida1 .b-pesquisa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pesquisa-rapida1 input{
+    padding: 12px;
+    border: none;
+    border-radius: 100px;
+  }
+  
+  .pesquisa-rapida1 input:focus{
+    outline: none;
+  }
+  
+  .most-review{
+    text-align: center;
   }
 
 }
