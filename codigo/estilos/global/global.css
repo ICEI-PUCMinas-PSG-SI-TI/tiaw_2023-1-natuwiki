@@ -227,6 +227,7 @@ footer {
     width: 100%;
     height: 0%;
     background: var(--background-third);
+    opacity: 90%;
     overflow: hidden;
     transition: height 0.4s;
     -moz-transition: 0.4s;
