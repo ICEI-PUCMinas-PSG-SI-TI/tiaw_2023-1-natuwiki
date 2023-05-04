@@ -74,7 +74,6 @@
     color: black;
 }
 
-
 .name {
     font-size: large;
 }
@@ -103,13 +102,17 @@
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 500px){
     #form{
         width: min-content;
         margin: 100px 20px;
     }
 
-    input{
-        width: 120px;
+    .caixa-pessoal .input label p{
+        font-size: smaller;
+    }
+
+    footer{
+        width: max-content;
     }
 }

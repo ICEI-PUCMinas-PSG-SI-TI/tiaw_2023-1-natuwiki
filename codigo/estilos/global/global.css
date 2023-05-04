@@ -299,7 +299,7 @@ footer {
 /* fim menu mobile */
 
 @media screen and (max-width: 768px) {
-    
+
   #rodape-inf {
     display: block;
     width: auto;
@@ -315,7 +315,7 @@ footer {
     border-bottom: none;
   }
   
-  #social-media a+a{
-   margin-left: 15%;
+  #social-media{
+    justify-content: space-evenly;
   }
 }
