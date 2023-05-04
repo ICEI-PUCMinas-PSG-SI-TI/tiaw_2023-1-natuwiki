@@ -102,7 +102,7 @@ input:focus {
         padding: 20px 45px;
     }
     #info-contact{
-        
+        position: absolute;
     }
 
 }
