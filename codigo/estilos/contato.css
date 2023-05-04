@@ -4,10 +4,10 @@ textarea {
 }
 
 #contato-form {
-    width: 60%;
+    width: 80%;
     display: block;
     margin: 20px auto;
-    padding: 20px 45px;
+    padding: 20px 40% 45px 45px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: var(--background-primary);
     border-radius: 10px;
@@ -96,10 +96,13 @@ input:focus {
 
     #contato-form {
         width: 90%;
-        display: block;
+        display:flex;
         margin-top: 100px;
         margin-bottom: 20px;
         padding: 20px 45px;
+    }
+    #info-contact{
+        position: absolute;
     }
 
 }
