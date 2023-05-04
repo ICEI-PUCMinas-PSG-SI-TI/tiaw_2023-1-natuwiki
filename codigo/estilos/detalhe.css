@@ -39,8 +39,14 @@ h4{
     transform: scale(1.1);
 }
 
+
+
 .info, .comentarios {
     margin: 30px;
+}
+
+.info h2{
+    font-weight: bold;
 }
 
 .info h5{
