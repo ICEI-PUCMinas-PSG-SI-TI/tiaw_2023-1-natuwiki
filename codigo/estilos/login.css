@@ -7,6 +7,24 @@ p{
     font-size: medium;
 }
 
+#limpar{
+    display: none;
+    background: none;
+    border: none;
+    color: darkred;
+    transition: color .3s;
+}
+
+#limpar:hover{
+    color: red;
+}
+
+#error{
+    display: none;
+    color: red;
+    font-weight: bold;
+}
+
 .dados{
     text-align: center;
     margin-top: 10%;
