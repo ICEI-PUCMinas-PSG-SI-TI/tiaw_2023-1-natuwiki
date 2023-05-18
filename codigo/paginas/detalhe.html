@@ -50,91 +50,143 @@
     <main>
         <div class="imagens-detalhe">
             <div id="img-1">
-                <img src= "https://fazendacapoava.com.br/wp-content/uploads/2019/09/natureza.jpg" alt="">
+                <img src="https://fazendacapoava.com.br/wp-content/uploads/2019/09/natureza.jpg" alt="">
             </div>
             <div id="img-2">
                 <img src="https://fazendacapoava.com.br/wp-content/uploads/2019/09/natureza.jpg" alt="">
             </div>
             <div id="img-3">
-                <img src= "https://fazendacapoava.com.br/wp-content/uploads/2019/09/natureza.jpg" alt="">
-                
+                <img src="https://fazendacapoava.com.br/wp-content/uploads/2019/09/natureza.jpg" alt="">
+
             </div>
         </div>
 
-        <br>
         <div class="acoes">
-           
-                <h2>Cachoeira Alta -Vale de Altamira - Nova União (MG) </h2>
-            
-            
+            <h2>Cachoeira Alta -Vale de Altamira - Nova União (MG)</h2>
             <button id="favoritar"><i id="i-favorito" class="fa-solid fa-heart"></i> Favoritar</button>
         </div>
 
         <article class="info">
-             <h5>Descrição do local</h5>
+            <div id="desc">
+                <h5><i class="fa fa-circle-info"></i> Descrição do local</h5>
+                <p>
+                    Há cerca de 2 horas de Belo Horizonte, Cachoeira Alta é um ótimo local para se visitar com a
+                    família, com um amplo espaço de camping para quem desejar apreciar a paisagem e fazer um piquenique
+                    com os familiares.
+                    Com uma trilha breve em meio a mata e no final se refrescar em uma cachoeira com queda d'água de
+                    mais de 100 metros...
+                </p>
 
-            <p>
-                Há cerca de 2 horas de Belo Horizonte, Cachoeira Alta é um ótimo local para se visitar com a família, com um amplo espaço de camping para quem desejar apreciar a paisagem e fazer um piquenique com os familiares.
-                Com uma trilha breve em meio a mata e no final se refrescar em uma cachoeira com queda d'água de mais de 100 metros.
-            </p>
+            </div>
 
-            <h5> Meios de Contatos</h5>
-            <p>
-                Email - cachoeiraalta@gmail.com
-            </p>
-            <p>
-                Cell - (31) 98730-2323
-            </p>
-            
-            <h5>Rotas e Meio de Transporte </h5>
-            <p>
-                Br 381 e 262 - Av. José Inácio de Magalhães - R. N. São do Carmo 
-            </p>
-            <p>
-                Ônibus Buser: Saindo de Belo Horizonte, à partir de R$69,90 
-            </p>
-            <h5> Horários de Funcionamento</h5>
-            <p>
-                Os horários de visítas e atendimentos à cachoeira são 24 horas, todos os dias da semana.
-            </p>
-            
+            <div id="contact">
+                <h5><i class="fa fa-phone"></i> Meios de Contato</h5>
+                <p>
+                    <b>Email</b> - cachoeiraalta@gmail.com
+                </p>
+                <p>
+                    Telefone - (31) 98730-2323
+                </p>
+            </div>
+
+            <div id="routes">
+                <h5><i class="fa fa-location-dot"></i> Rotas e Meio de Transporte </h5>
+                <p>
+                    Br 381 e 262 - Av. José Inácio de Magalhães - R. N. São do Carmo
+                </p>
+                <p>
+                    Ônibus Buser: Saindo de Belo Horizonte, à partir de R$69,90
+                </p>
+            </div>
+
+            <div id="times">
+                <h5><i class="fa fa-clock"></i> Horários de Funcionamento</h5>
+                <p>
+                    Os horários de visítas e atendimentos à cachoeira são 24 horas, todos os dias da semana.
+                </p>
+            </div>
         </article>
 
         <section class="comentarios">
             <div>
-                <h5>Escreva um comentário</h5>
+                <h5>Escreva seu comentário de avaliação</h5>
                 <form action="">
-                    <textarea name="" id="" cols="50" rows="10"
-                        placeholder="Insira seu comentario avaliando o local"></textarea>
-                    <button type="submit" class="d-block">Enviar</button>
+                    <div class="text">
+                        <textarea name="" id="" cols="50" rows="10"
+                            placeholder="Insira seu comentario avaliando o local"></textarea>
+                    </div>
+
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+
+                    <button id="enviar" type="submit" class="d-block">Enviar</button>
                 </form>
             </div>
             <div>
-                <br>
                 <h4>Ver Comentários:</h4>
                 <br>
                 <h5>Lucas Teodoro</h5>
                 <div>Cachoeira de 100 metros de queda d'água. Acesso tranquilo de carro e pequena trilha.
-                    Muito linda, vale a pena demais visitar. Possui estacionamento e bar próximo. 
+                    Muito linda, vale a pena demais visitar. Possui estacionamento e bar próximo.
                 </div>
                 <br>
                 <h5>Vanessa Silva</h5>
-                <div>A Cachoeira Alta é de fácil acesso e tem sua beleza e imponência mais de 100 metros de altura com água limpa.
+                <div>A Cachoeira Alta é de fácil acesso e tem sua beleza e imponência mais de 100 metros de altura com
+                    água limpa.
                 </div>
-
-            
-                
-                
             </div>
         </section>
-
+        </div>
     </main>
 
+    <footer>
+        <section id="rodape-inf">
 
+            <div class="footer-area">
+                <h3>FALE CONOSCO</h3>
+                <h6>NOSSOS CANAIS DE COMUNICAÇÃO DIRETA</h6>
+                <p>(31) 9 99727-0845</p>
+                <p>natuwiki@info.com</p>
+                <p>Rua Walter Ianni, 255 - São Gabriel Belo Horizonte - MG - Brasil</p>
+            </div>
 
+            <div class="footer-area">
+                <h3>REDES SOCIAS</h3>
+                <h6>APROVEITE OUTROS CONTEÚDOS DA NATUWIKI</h6>
+                <div id="social-media">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
 
+            <div class="footer-area">
+                <h3>AJUDA</h3>
+                <h6>PRECISA DE ALGUMA INFORMAÇÃO RÁPIDA ?</h6>
+                <a href="">Reportar um erro ou problema</a>
+                <a href="">Central de Atendimento</a>
+                <a href="">Política de Privacidade</a>
+                <a href="sobre.html">Quem Somos</a>
+                <a href="">Tornar-se nosso parceiro</a>
+            </div>
 
+        </section>
 
+        <section id="rodape-cp">
+            <span>&copy 2023 NatuWiki</span>
+        </section>
 </body>
 
 </html>
