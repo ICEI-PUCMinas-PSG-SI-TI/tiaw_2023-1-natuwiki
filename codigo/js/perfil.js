@@ -77,7 +77,7 @@ function load_user_info(personId) {
                 </strong>
             </td>
             <td>
-                <input id="cidade" disabled required value=${pessoa.nome}></input>
+                <input id="cidade" disabled required value=${pessoa.cidade}></input>
             </td>
         </tr>
     </tbody>`
