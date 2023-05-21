@@ -9,6 +9,7 @@ main{
     text-align: center;
     padding: 10px;
     transition:background-color .2s ;
+    margin-bottom: 10px;
 }
 .alterar:hover{
     background-color: var(--background-third);

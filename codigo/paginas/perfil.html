@@ -60,68 +60,16 @@
                         <div class="col-md-6">
                             <strong>Dados Pessoais</strong><br>
                             <div class="table-responsive">
-                                <table class="table table-user-information">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <strong>
-                                                    <span class="glyphicon glyphicon-user  text-primary"></span>
-                                                    Nome
-                                                </strong>
-                                            </td>
-                                            <td>
-                                                Nome do Usuário
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <strong>
-                                                    <span class="glyphicon glyphicon-cloud text-primary"></span>
-                                                    Sobrenome
-                                                </strong>
-                                            </td>
-                                            <td>
-                                                Sobrenome do Usuário
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>
-                                                <strong>
-                                                    <span class="glyphicon glyphicon-eye-open text-primary"></span>
-                                                    Contato
-                                                </strong>
-                                            </td>
-                                            <td>
-                                                (XX) X XXXX-XXXX
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <strong>
-                                                    <span class="glyphicon glyphicon-envelope text-primary"></span>
-                                                    Email
-                                                </strong>
-                                            </td>
-                                            <td>
-                                                noreply@email.com
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <strong>
-                                                    <span class="glyphicon glyphicon-calendar text-primary"></span>
-                                                    Cidade
-                                                </strong>
-                                            </td>
-                                            <td>
-                                                Belo Horizonte
-                                            </td>
-                                        </tr>
-                                    </tbody>
+                                <table id="user-information" class="table table-user-information">
                                 </table>
-                                <div class="alterar">
-                                    <button type="submit">Alterar dados pessoais</button>
+                                <div id="button-change" class="alterar">
+                                    <button type="button" onclick="liberaCampos(true)">Alterar dados pessoais</button>
+                                </div>
+                                <div hidden id="save" class="alterar">
+                                    <button id="btn-save" type="button">Salvar</button>
+                                </div>
+                                <div hidden id="cancel" class="alterar">
+                                    <button id="btn-cancel" type="button">Cancelar</button>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +119,9 @@
             <span>&copy 2023 NatuWiki</span>
         </section>
     </footer>
-
+    
+    <script src="../js/dados.js"></script>
+    <script src="../js/perfil.js"></script>
 </body>
 
 </html>
