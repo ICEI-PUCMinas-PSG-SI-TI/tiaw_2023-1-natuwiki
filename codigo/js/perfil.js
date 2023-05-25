@@ -1,12 +1,12 @@
 window.onload = () => {
-    let param = new URLSearchParams(window.location.search);
-    let personId = param.get("id");
-    posicaoPessoa = load_user_info(personId);
+    /*let param = new URLSearchParams(window.location.search);
+    let personId = param.get("id");*/
+    pessoa = load_user_info();
 
     liberaCampos(false);
 
     document.getElementById('btn-cancel').addEventListener('click', () => {
-        cancel(personId);
+        cancel();
     });
 
     document.getElementById('btn-save').addEventListener('click', () => {
@@ -14,15 +14,9 @@ window.onload = () => {
     });
 }
 
-function load_user_info(personId) {
-    var pessoa;
-    var posicaoPessoa;
-    for (let i = 0; i < pessoas.length; i++) {
-        if (pessoas[i].id == personId) {
-            pessoa = pessoas[i];
-            posicaoPessoa = i;
-        }
-    }
+function load_user_info() {
+    var pessoa = JSON.parse(localStorage.getItem("usuarioLogado"));
+    
     user_table_info = `<tbody>
         <tr>
             <td>
@@ -83,7 +77,7 @@ function load_user_info(personId) {
     </tbody>`
 
     window.document.getElementById('user-information').innerHTML = user_table_info;
-    return posicaoPessoa;
+    return pessoa;
 }
 
 function liberaCampos(libera) {
@@ -116,16 +110,24 @@ function alterar() {
     var email = window.document.getElementById('email').value;
     var cidade = window.document.getElementById('cidade').value;
 
-    pessoas[posicaoPessoa].nome = first_name;
-    pessoas[posicaoPessoa].sobrenome = last_name;
-    pessoas[posicaoPessoa].celular = telefone;
-    pessoas[posicaoPessoa].cidade = cidade;
-    pessoas[posicaoPessoa].email = email;
+    pessoa.nome = first_name;
+    pessoa.sobrenome = last_name;
+    pessoa.celular = telefone;
+    pessoa.cidade = cidade;
+    pessoa.email = email;
 
+    localStorage.setItem('usuarioLogado', JSON.stringify(pessoa));
+
+    for(let i = 0; i < pessoas.length; i++){
+        if(pessoa.id = pessoas[i].id){
+            pessoas[i] = pessoa;
+        }
+    }
+    
     localStorage.setItem('pessoas', JSON.stringify(pessoas));
 }
 
-function cancel(personId) {
+function cancel() {
     liberaCampos(false);
-    load_user_info(personId);
+    load_user_info();
 }

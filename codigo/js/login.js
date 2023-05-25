@@ -1,4 +1,6 @@
 window.onload = () => {
+   
+
     let userpadrao = "admin@natuwiki";
     let senhapadrao = "1234";
     form = document.getElementById("form-login");
@@ -20,16 +22,18 @@ window.onload = () => {
     });
 };
 
+
 function validaAutenticacao(event, username, password){
     var entradaUsuario = document.getElementById("username").value;
     var entradaSenha = document.getElementById("password").value;
-
-    if(entradaUsuario != username.toLowerCase()
-    || entradaSenha != password.toLowerCase()){
-        event.preventDefault();
-        error.style.display = 'block';
-        limpar.style.display = 'inline-block';  
-        error.textContent = "Senha e/ou usuário inválidos";        
+    var usuarioLogado;
+    
+    for (let i = 0; i < pessoas.length; i++) {
+        
+        if(entradaUsuario == pessoas[i].usuario.login && entradaSenha == pessoas[i].usuario.senha){
+            usuarioLogado = pessoas[i];
+            localStorage.setItem('usuarioLogado', JSON.stringify(usuarioLogado));
+        }
     }
 }
 

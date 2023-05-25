@@ -1,25 +1,26 @@
-var pessoas = JSON.parse(localStorage.getItem("pessoas"))
+var pessoas = JSON.parse(localStorage.getItem("pessoas"));
 
 //Danielle, continuar o cadastro de pessoas e de locais
-if (!pessoas){
+if (!pessoas) {
     pessoas = [
         {
-            "id" : 1,
-            "nome": "Davi",
-            "sobrenome": "Martins",
+            "id": 1,
+            "nome": "Admin",
+            "sobrenome": "Natuwiki",
             "cidade": "Belo Horizonte",
             "celular": "31997270845",
-            "email": "davimartinsfreitas@gmail.com",
+            "email": "admin@natuwiki",
             "casado": false,
             "filhos": 0,
             "experiencia_natureza": "baixo",
             "destinos_favoritos": ["Cachoeira", "Camping"],
-            "transporte":["Transporte Público", "Bicicleta"],
-            "usuario":{
-                "senha": "teste",
-                "login": "davimartinsfreitas@gmail.com"
-            }      
+            "transporte": ["Transporte Público", "Bicicleta"],
+            "usuario": {
+                "senha": "1234",
+                "login": "admin"
+            }
         }
     ];
 }
+
 
