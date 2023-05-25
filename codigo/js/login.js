@@ -4,10 +4,15 @@ window.onload = () => {
     form = document.getElementById("form-login");
     error = document.getElementById("error");
     limpar = document.getElementById("limpar");
+    entrar = document.getElementById("link-entrar");//gambiarra
 
-    form.addEventListener('submit', (event) =>{
+    /*form.addEventListener('submit', (event) =>{
         validaAutenticacao(event, userpadrao, senhapadrao);
-    });
+    });*/
+
+    entrar.addEventListener('click', (event) =>{
+        validaAutenticacao(event, userpadrao, senhapadrao);//gambiarra parte 2
+    })
 
     limpar.addEventListener('click', () =>{
         error.style.display = 'none';
@@ -27,3 +32,4 @@ function validaAutenticacao(event, username, password){
         error.textContent = "Senha e/ou usuário inválidos";        
     }
 }
+
