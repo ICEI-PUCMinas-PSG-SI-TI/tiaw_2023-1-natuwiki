@@ -14,10 +14,10 @@ main{
 .alterar:hover{
     background-color: var(--background-third);
 }
-.alterar button:hover{
+.alterar a:hover, button:hover{
     color: white;
 }
-.alterar button{
+.alterar a, button{
     color: var(--background-third);
     text-decoration: none;
     font-size: 15px;

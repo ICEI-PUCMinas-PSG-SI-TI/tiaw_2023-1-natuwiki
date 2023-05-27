@@ -1,19 +1,11 @@
 window.onload = () => {
-   
-
-    let userpadrao = "admin@natuwiki";
-    let senhapadrao = "1234";
     form = document.getElementById("form-login");
     error = document.getElementById("error");
     limpar = document.getElementById("limpar");
-    entrar = document.getElementById("link-entrar");//gambiarra
-
-    /*form.addEventListener('submit', (event) =>{
-        validaAutenticacao(event, userpadrao, senhapadrao);
-    });*/
+    entrar = document.getElementById("link-entrar");
 
     entrar.addEventListener('click', (event) =>{
-        validaAutenticacao(event, userpadrao, senhapadrao);//gambiarra parte 2
+        validaAutenticacao(event);
     })
 
     limpar.addEventListener('click', () =>{
@@ -23,16 +15,20 @@ window.onload = () => {
 };
 
 
-function validaAutenticacao(event, username, password){
+function validaAutenticacao(event){
     var entradaUsuario = document.getElementById("username").value;
     var entradaSenha = document.getElementById("password").value;
-    var usuarioLogado;
+    var usuario;
     
     for (let i = 0; i < pessoas.length; i++) {
         
         if(entradaUsuario == pessoas[i].usuario.login && entradaSenha == pessoas[i].usuario.senha){
-            usuarioLogado = pessoas[i];
-            localStorage.setItem('usuarioLogado', JSON.stringify(usuarioLogado));
+            usuario = {
+                "nome": pessoas[i].usuario.login,
+                "logado": true
+            };
+            localStorage.setItem('usuario', JSON.stringify(usuario));
+            localStorage.setItem('dadosUsuario', JSON.stringify(pessoas[i]));
         }
     }
 }
