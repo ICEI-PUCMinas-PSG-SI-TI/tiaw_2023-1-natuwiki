@@ -8,7 +8,7 @@
 | 4. Página para cadastro | OK |
 | 5. Página para login | OK  |
 | 6. Página de perfil | OK |
-| 7. Página específica (esporte) |  |
+| 7. Página específica (detalhe) | OK  |
 | 8. CSS e links funcionando | OK |
 | 9. Responsividade | OK |
 | 10. Login fake | OK  |
