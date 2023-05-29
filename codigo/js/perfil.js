@@ -1,3 +1,11 @@
+ //código da Hayanne inicio
+ var usuario= JSON.parse(localStorage.getItem("usuario"));
+
+if(usuario.logado == false){
+    document.location.href = './login.html';
+}
+//código da Hayanne fim
+
 window.onload = () => {
 
     pessoa = load_user_info(page);
