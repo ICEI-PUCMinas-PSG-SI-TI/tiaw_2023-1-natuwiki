@@ -7,7 +7,7 @@ if(usuario.logado == false){
 //código da Hayanne fim
 
 window.onload = () => {
-
+    
     pessoa = load_user_info(page);
 
 }

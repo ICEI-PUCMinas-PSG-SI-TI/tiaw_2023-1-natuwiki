@@ -1,3 +1,5 @@
+const pessoas = JSON.parse(localStorage.getItem('pessoas'));
+
 window.onload = () => {
     form = document.getElementById("form-login");
     error = document.getElementById("error");
