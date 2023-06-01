@@ -8,7 +8,8 @@ A Plataforma NatuWIki irá auxiliar moradores e turistas que desejam conhecer a 
 * Danielle Santos Torres
 * Pedro Ribeiro Canuto
 * Davi Martins Freitas de Oliveira Fonseca
-* Gabriel santos da Silva
+* Gabriel Santos da Silva
+* Hayanne Santos da Silva
 
 ## Professores responsáveis
 
