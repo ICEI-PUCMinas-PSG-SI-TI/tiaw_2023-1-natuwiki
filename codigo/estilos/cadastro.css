@@ -116,3 +116,8 @@
         width: max-content;
     }
 }
+
+.invalido{
+    color: red;
+    font-weight: bold;
+}
