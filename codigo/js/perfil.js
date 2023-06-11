@@ -19,7 +19,7 @@ function load_user_info() {
     if(page == 'perfil'){
         enabled_or_disabled = 'disabled'
     }
-
+    console.log(pessoa.nome)
     user_table_info = `<tbody>
         <tr>
             <td>
