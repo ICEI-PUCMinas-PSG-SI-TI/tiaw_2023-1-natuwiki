@@ -1,5 +1,13 @@
 const pessoas = JSON.parse(localStorage.getItem('pessoas'));
 
+//código da Hayanne inicio
+var usuario= JSON.parse(localStorage.getItem("usuario"));
+
+if(usuario !=null && usuario.logado == true){
+    document.location.href = './perfil.html';
+}
+//código da Hayanne fim
+
 window.onload = () => {
     form = document.getElementById("form-login");
     error = document.getElementById("error");

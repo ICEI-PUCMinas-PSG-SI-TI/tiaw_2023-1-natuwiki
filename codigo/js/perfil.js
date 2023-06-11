@@ -1,7 +1,7 @@
  //código da Hayanne inicio
  var usuario= JSON.parse(localStorage.getItem("usuario"));
 
-if(usuario.logado == false){
+if(usuario == null || usuario.logado == false){
     document.location.href = './login.html';
 }
 //código da Hayanne fim
