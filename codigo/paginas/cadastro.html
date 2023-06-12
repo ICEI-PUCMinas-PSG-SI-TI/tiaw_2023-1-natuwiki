@@ -56,7 +56,8 @@
                             <p class="name font-weight-normal">Nome</p>
                         </label>
                         <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                        <input id="username" name="username" placeholder=" Digite seu nome" type="text"></input>
+                        <input id="username" name="username" required placeholder=" Digite seu nome" type="text"></input>
+                        <p class="invalido" id="erro_nome"></p>
                     </div>
 
                     <div class="input">
@@ -64,7 +65,8 @@
                             <p class="name font-weight-normal">Sobrenome</p>
                         </label>
                         <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                        <input id="username" name="username" placeholder=" Digite seu Sobrenome" type="text"></input>
+                        <input id="sobrenome" name="sobrenome" required placeholder=" Digite seu Sobrenome" type="text"></input>
+                        <p class="invalido" id="erro_sobrenome"></p>
                     </div>
 
                     <div class="input">
@@ -72,7 +74,8 @@
                             <p class="name font-weight-normal">Cidade/Residência</p>
                         </label>
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <input id="username" name="username" placeholder=" Digite a Cidade" type="text"></input>
+                        <input id="cidade" name="cidade" required placeholder=" Digite a Cidade" type="text"></input>
+                        <p class="invalido" id="erro_cidade"></p>
                     </div>
 
                     <div class="input">
@@ -80,7 +83,8 @@
                             <p class="name font-weight-normal">Celular</p>
                         </label>
                         <i class="fa fa-mobile" aria-hidden="true"></i>
-                        <input id="number" name="number" placeholder=" (xx) xxxx-xxxx" type="tel"></input>
+                        <input id="number" name="number" required placeholder=" (xx) xxxx-xxxx" type="tel"></input>
+                        <p class="invalido" id="erro_number"></p>
                     </div>
 
                     <div class="input">
@@ -88,7 +92,8 @@
                             <p class="name font-weight-normal">E-mail</p>
                         </label></label>
                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <input id="email" name="email" placeholder=" E-mail" type="email">
+                        <input id="email" name="email" required placeholder=" E-mail" type="email">
+                        <p class="invalido" id="erro_email"></p>
                     </div>
 
                     <div class="input">
@@ -96,7 +101,8 @@
                             <p class="name font-weight-normal">Senha</p>
                         </label></label>
                         <i class="fa fa-lock" aria-hidden="true"></i>
-                        <input type="password" id="senha" name="senha" placeholder=" Digite sua senha" type="text">
+                        <input type="password" id="senha" required name="senha" placeholder=" Digite sua senha" type="text">
+                        <p class="invalido" id="erro_senha"></p>
                     </div>
 
                     <div class="input">
@@ -104,13 +110,14 @@
                             <p class="name font-weight-normal">Confirma Senha</p>
                         </label></label>
                         <i class="fa fa-lock" aria-hidden="true"></i>
-                        <input type="password" id="senha" name="senha" placeholder=" Digite sua senha" type="text">
+                        <input type="password" id="confirmacao"  required name="confirmacao" placeholder=" Digite sua senha" type="text">
+                        <p class="invalido" id="erro_confirmacao"></p>
                     </div>
 
                     <div class="input">
                         <p class="name font-weight-normal">Casado(a) ?</p>
                         <div class="d-flex">
-                            <select name="" id="">
+                            <select name="" id="estado-civil" required>
                                 <option value="">Sim</option>
                                 <option value="">Não</option>
                                 <option value="">Namorando</option>
@@ -121,7 +128,7 @@
                     <div class="input">
                         <p class="name font-weight-normal">Filhos</p>
                         <div class="d-flex">
-                            <select name="" id="">
+                            <select name="" id="filhos" required>
                                 <option value="">Não</option>
                                 <option value="">1</option>
                                 <option value="">2</option>
@@ -138,7 +145,7 @@
                     <div class="input">
                         <label class="d-block" for="caixa-nivel">
                             <p class="name font-weigth-normal"> Nível de Experiência com a <br>Natureza</label></p>
-                        <select name="caixa-nivel" id="caixa-nivel" class="w-75">
+                        <select name="caixa-nivel" id="caixa-nivel" class="w-75" required>
                             <option value="">Baixo</option>
                             <option value="">Médio</option>
                             <option value="">Alto</option>
@@ -149,7 +156,7 @@
                         <label class="d-block" for="username">
                             <p class="name font-weight-normal">Destinos favoritos</p>
                         </label>
-                        <select multiple name="" id="" class="w-75">
+                        <select multiple name="" id="destinos" class="w-75" required>
                             <option value="">Cachoeira</option>
                             <option value="">Camping</option>
                             <option value="">Trilha</option>
@@ -163,7 +170,7 @@
                         <label class="d-block" for="username">
                             <p class="name font-weight-normal">Meio de Transporte</p>
                         </label>
-                        <select multiple name="" id="" class="w-75">
+                        <select multiple name="" id="transporte" class="w-75" required>
                             <option value="">Carro</option>
                             <option value="">Moto</option>
                             <option value="">Transporte público</option>
@@ -173,7 +180,7 @@
                 </div>
 
                 <div class="botoes1 shadow p-3 mb-5" id="btn">
-                    <button type="submit">Cadastrar</button>
+                    <button id="btn_cadastro" type="submit">Cadastrar</button>
                 </div>
             </form>
         </div>
@@ -218,6 +225,8 @@
             <span>&copy 2023 NatuWiki</span>
         </section>
     </footer>
+
+    <script src="../js/cadastro.js"></script>
 </body>
 
 </html>
