@@ -1,32 +1,22 @@
+var erros = [];
+
 window.onload = () => {
     pessoa = load_user_info(page);
 
     document.getElementById('btn-save').addEventListener('click', () => {
-        var erros = [];
-        var nome = document.getElementById('first-name').value;
-        var sobrenome = document.getElementById('last-name').value;
-        var telefone = document.getElementById('telefone').value;
+        erros = [];
+        var nome = {"field":"nome", "value": document.getElementById('first-name').value};
+        var sobrenome = {"field":"sobrenome", "value": document.getElementById('last-name').value};
+        var telefone = {"field":"celular", "value": document.getElementById('telefone').value};
+        var email = {"field":"email", "value": document.getElementById('email').value};
+        var filhos = {"field":"filhos", "value": document.getElementById('filhos').value};
+        var cidade = {"field":"cidade", "value": document.getElementById('cidade').value};
+        var experiencia = {"field":"experiencia_natureza", "value": document.getElementById('experiencia').value};
+        var transporte = {"field":"transporte", "value": document.getElementById('transporte').value};
 
-        if(nome == ''){
-            erros.push('Nome inválido!');
-        }
-        else if(nome != pessoa.nome){
-            pessoa.nome = nome;
-        }
-
-        if(sobrenome == ''){
-            erros.push('Sobrenome inválido!');
-        }
-        else if(sobrenome != pessoa.sobrenome){
-            pessoa.sobrenome = sobrenome;
-        }
-
-        if(telefone == ''){
-            erros.push('Celular inválido!');
-        }
-        else if(telefone != pessoa.celular){
-            pessoa.celular = telefone;
-        }
+        fields = [nome, sobrenome, telefone, email, filhos, cidade, experiencia, transporte];
+        
+        validateNotEmpty(fields, pessoa);
 
         pessoas = JSON.parse(localStorage.getItem('pessoas'));
 
@@ -46,9 +36,25 @@ window.onload = () => {
         }else{
             localStorage.setItem('dadosUsuario', JSON.stringify(pessoa));
             localStorage.setItem('pessoas', JSON.stringify(pessoas));
+            window.location.href = './perfil.html';
         }
     })
 
+    document.getElementById('btn-cancel').addEventListener('click', () => {
+        window.location.href = './perfil.html';
+    })
+
+}
+
+function validateNotEmpty(fields, pessoa){
+    fields.forEach(item => {
+        if(item.value == ''){
+            erros.push(`${item.field} inválido !`);
+        }
+        else{
+            pessoa[item.field] = item.value;
+        }   
+    });
 }
 
 function load_user_info() {
@@ -119,7 +125,7 @@ function load_user_info() {
                 </strong>
             </td>
             <td>
-                <input id="cidade" required value=${pessoa.experiencia_natureza}></input>
+                <input id="experiencia" required value=${pessoa.experiencia_natureza}></input>
             </td>
         </tr>
         <tr>
@@ -130,7 +136,7 @@ function load_user_info() {
                 </strong>
             </td>
             <td>
-                <input id="cidade" required value=${pessoa.filhos}></input>
+                <input id="filhos" required value=${pessoa.filhos}></input>
             </td>
         </tr>
         <tr>
@@ -141,7 +147,7 @@ function load_user_info() {
                 </strong>
             </td>
             <td>
-                <input id="cidade" required value=${pessoa.transporte}></input>
+                <input id="transporte" required value=${pessoa.transporte}></input>
             </td>
         </tr>
     </tbody>`
