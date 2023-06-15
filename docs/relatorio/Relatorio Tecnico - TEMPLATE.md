@@ -9,7 +9,8 @@ Sistemas de informação
 Danielle Santos Torres
 Davi Martins Freitas de Oliveira Fonseca
 Gabriel Hubner Bastos Athaide
-Gabriel santos da Silva
+Gabriel Santos da Silva
+Hayanne Santos da Silva
 Pedro Ribeiro Canuto
 
 # Estrutura do Documento
@@ -49,15 +50,9 @@ preços e informações sobre possíveis aventuras que possam ser disponibilizad
   O problema da informação sobre infraestrutura do local é um dos objetivo alvo desse trabalho. Para isso, todos os locais disponibilizados no site terão uma descrição detalhada sobre tudo que é oferecido naquele local. Pensando em uma área de camping, o site informará se nesse ambiente possuem chalés para acomodação ou se são somente espaços para barracas, se esses espaços são cobertos ou não, se há fornecimento de água tratada e pontos de energia, por outro lado se o local disponibilizar alguma acomodação será necessária informações sobre como são as acomodações, preços, como é a distribuição de banheiros, água tratada e alimentação, se há internet disponível no local, com isso a natuwiki tem como objetivo dar ao usuário toda a informação que ele possa precisar sobre a infraestrutura do local que ele deseja visitar.
   
   Outro objetivo alvo da NATUWIKI é em relação a participação do usuário na construção e manutenção do site. A natuwiki irá ter um foco nas avalições dos usuários sobre locais que esses já visitaram, dando a oportunidade que eles compartilhem informações sobre as reais condições dos locais, as opções de lazer nos locais, como chegaram e valor que realmente pagaram, dando a oportunidade de outros usuários sentirem uma experiência real sobre tais locais a partir dessas informações relatadas e de avaliações que serão disponibilizadas no site.
-
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também pelo menos 2 objetivos
-> específicos dependendo de onde você vai querer concentrar ou aprofundar
-> as características do trabalho.
 > 
-> **Link Útil**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+>
+> 
 
 ## Público-Alvo
 
@@ -148,24 +143,6 @@ histórico familiar de Nivaldo, seu conhecimento sobre locais de lazer já é be
 permite que ele possa passar bastante informações e dicas de viagens para seus amigos e
 conhecidos.
 
-
-> Relacione as personas identificadas no seu projeto. Lembre-se que 
-> você deve descrever precisamente e de forma personalizada o público alvo do seu projeto. 
-> Você pode incluir uma imagem da ficha de persona desenvolvida. 
->
-> Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina
-> e/ou nos seguintes links:
->
-> **Links Úteis**:
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> 
-> **Exemplo de Ficha**
-> ![Exemplo de Persona](images/persona.png)
- 
-
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
@@ -202,56 +179,16 @@ A tabela que segue apresenta os requisitos funcionais do projeto.
 |RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
 |RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
 
-
-> Com base nas Histórias de Usuário, enumere os requisitos da sua
-> solução. Classifique esses requisitos em dois grupos:
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma
-> característica alvo da sua solução. Além disso, certifique-se de que
-> todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
 # Projeto da Solução
 
-......  COLOQUE AQUI O SEU TEXTO ......
-> Descreva brevemente quais tecnologias e/ou frameworks foram utilizados no projeto.
 
 ## Wireframes
-
-......  INCLUA AQUI OS WIREFRAMES DAS TELAS DA APLICAÇÃO COM UM BREVE DESCRITIVO ......
-
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
-> estrutura de um site web e seu relacionamentos entre suas
-> páginas. Um wireframe web é uma ilustração semelhante ao
-> layout de elementos fundamentais na interface.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> 
-> **Exemplo**:
-> 
-> ![Exemplo de Link para Wireframe](images/wireframe-example.png)
+> ![Exemplo de Link para Wireframe](images/main.png)
 
 
 ## Mapa de navegação
-
-......  COLOQUE AQUI O SEU TEXTO OU DIAGRAMA DE NAVEGAÇÃO .......
-
-> Inclua uma descrição textual ou um diagrama mostrando, sequencialmente, quais ações
-> um usuário deve realizar para utilizar todas as características do seu sistema. 
-
-
-> **Exemplo de Diagrama (opcional, pode ser em texto)**
 > ![Exemplo de Diagrama de Navegação](images/userflow.jpg)
 
 # Conclusões
-
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Finalize escrevendo um ou dois parágrafos para relembrar o objetivo do projeto, 
-> o que foi possível alcançar e o que ficou para um trabalho futuro, e relembrando
-> as principais dificuldes encontradas e como foi possível contorná-las. 
 
 
