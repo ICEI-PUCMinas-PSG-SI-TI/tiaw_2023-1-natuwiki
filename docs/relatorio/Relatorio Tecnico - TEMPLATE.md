@@ -56,23 +56,12 @@ preços e informações sobre possíveis aventuras que possam ser disponibilizad
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
+A NatuWiki possui como público-alvo amantes da natureza, 
+pessoas que eu seu interior sentem prazer e alegria em estar em contato com a natureza,
+independente se é em momentos de lazer, descanso ou aventura.
+Tais pessoas, na maioria das vezes, já possuíram contato com a natureza e por isso
+desenvolveram interesse em compartilhar momentos nesses ambientes.
 
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
-> 
-> **Links Úteis**:
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
- 
 # Especificações do Projeto
 
 ......  COLOQUE AQUI O SEU TEXTO ......
