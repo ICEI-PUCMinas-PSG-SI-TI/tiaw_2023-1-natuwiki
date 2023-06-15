@@ -170,3 +170,7 @@ textarea{
         float: none;
     }
 }
+
+        .carousel-image {
+            height: 500px;
+        }
