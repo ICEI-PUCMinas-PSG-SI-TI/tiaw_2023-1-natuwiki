@@ -11,30 +11,33 @@
 #img-3 {
     grid-column: 2;
 }
+
 #img-1 {
     grid-row: 1/3;
 }
 
-#img-2 img, #img-3 img {
+#img-2 img,
+#img-3 img {
     height: 360px;
 }
 
-#img-1 img{
+#img-1 img {
     height: 720px;
 }
 
-h4{
+h4 {
     margin: 10px;
 }
 
-.acoes{
+.acoes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 20px;
+    padding-top: 70px;
 }
 
-#favoritar{
+#favoritar {
     background-color: transparent;
     border: none;
     font-size: 20px;
@@ -42,7 +45,7 @@ h4{
     padding: 10px;
 }
 
-#enviar{
+#enviar {
     background-color: var(--background-third);
     color: white;
     border: none;
@@ -52,21 +55,27 @@ h4{
     float: right;
 }
 
-#enviar:hover{
+#enviar:hover {
     opacity: .8;
 }
 
-#favoritar:hover{
+#favoritar:hover {
     background-color: var(--background-third);
     color: white;
     transform: scale(1.1);
 }
 
-.info, .comentarios{
+.info,
+.comentarios {
     margin: 0 12px;
 }
 
-.info{
+.comentario{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+
+.info {
     display: grid;
     gap: 5%;
     grid-template-columns: repeat(2, 1fr);
@@ -77,33 +86,35 @@ h4{
 }
 
 
-.info h2{
+.info h2 {
     font-weight: bold;
 }
 
-.info h5{
+.info h5 {
     font-weight: bold;
     color: var(--background-third);
 }
-.info p{
+
+.info p {
     text-align: justify;
     font-size: 20px;
 }
 
-article:first-of-type{
+article:first-of-type {
     border-bottom: 1px solid black;
 }
 
-textarea{
+textarea {
     padding: 10px;
 }
 
-.comentarios{
+.comentarios {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.comentarios div{
+
+.comentarios div {
     margin-bottom: 10px;
 }
 
@@ -112,39 +123,48 @@ textarea{
     float: left;
     padding: 0 10px;
 }
-.rate:not(:checked) > input {
+
+.rate:not(:checked)>input {
     display: none;
 }
 
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:30px;
-    color:#ccc;
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
 }
 
-.rate:not(:checked) > label:before {
+.rate:not(:checked)>label:before {
     content: '★ ';
 }
-.rate > input:checked ~ label {
-    color: var(--background-primary);    
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: var(--background-primary);  
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
+
+.rate>input:checked~label {
     color: var(--background-primary);
 }
 
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: var(--background-primary);
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: var(--background-primary);
+}
+
+.carousel-image {
+    height: 500px;
+}
+
 @media screen and (max-width: 800px) {
+
     .imagens-detalhe {
         display: block;
     }
@@ -153,24 +173,25 @@ textarea{
         height: 360px;
     }
 
-    .acoes{
+    .acoes {
         width: 520px;
         margin: 20px;
     }
 
-    .info{
+    .info {
         display: block;
     }
 
-    textarea{
+    textarea {
         width: 70%;
     }
-    
-    #enviar{
+
+    #enviar {
         float: none;
+    }
+
+    .carousel-image {
+        height: 300px;
     }
 }
 
-        .carousel-image {
-            height: 500px;
-        }

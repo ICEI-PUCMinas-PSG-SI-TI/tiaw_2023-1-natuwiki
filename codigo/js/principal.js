@@ -53,7 +53,6 @@ function fillPlacesCards() {
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-                    <div class="rating d-flex mt-2"></div>
 
                     <p class="card-tag">${local.descricao.slice(0, 150)}...</p>
                     <i class="fa fa-map-marker d-flex">
@@ -64,7 +63,7 @@ function fillPlacesCards() {
                             <p class="mt-2">Leia mais</p>
                         </a>
                     </div>
-         </div>`
+            </div>`
 
         placesContainer.innerHTML += cardLocal;
     }
