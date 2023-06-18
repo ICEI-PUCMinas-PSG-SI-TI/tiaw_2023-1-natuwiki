@@ -137,7 +137,8 @@ dadosLocais = [
         "como chegar": "Para chegar à Cachoeira Véu da Noiva, siga pela Estrada da Serra até o km 12, na Serra do Cipó.",
         "horário de funcionamento": "A cachoeira pode ser visitada diariamente, das 9h às 17h.",
         "oferecer estadia?": "A Cachoeira Véu da Noiva - Serra do Cipó não oferece estadia, mas há diversas opções de hospedagem disponíveis na região da Serra do Cipó.",
-        "imagensprincipal":[],
+        "imagensprincipal":["https://upload.wikimedia.org/wikipedia/commons/c/ca/Parque_Nacional_da_Serra_do_Cip%C3%B3_Arnoldo_Gomes_Michels_%282%29.jpg",
+         "https://upload.wikimedia.org/wikipedia/commons/f/f3/Cachoeira_V%C3%A9u_da_Noiva_-_Serra_do_Cip%C3%B3_-_MG_-_panoramio_%2810%29.jpg"],
         "imagensdetalhe":[]
     }
 ]

@@ -8,27 +8,32 @@ window.onload = () => {
     fillPlacesCards();
 }
 
-function shuffleArray(array){
+function shuffleArray(array) {
     return array.map(value => ({ value, sort: Math.random() }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(({ value }) => value)
+        .sort((a, b) => a.sort - b.sort)
+        .map(({ value }) => value)
 }
 
 function fillPlacesCards() {
     var locais = shuffleArray(JSON.parse(localStorage.getItem('locais')));
     var placesContainer = document.getElementById('places-container');
-    
+
     for (let i = 0; i < 4; i++) {
         var local = locais[i];
 
-        imagens = ``
-        local.imagensprincipal.forEach(source => {
+        imagens = 
+        `<div class="carousel-item active">
+            <img src="${local.imagensprincipal[0]}" class="d-block w-100 m-auto"
+             alt="${local.nome}">
+         </div>`
+
+        for(let i = 1; i < local.imagensprincipal.length; i++){
             imagens += `
-            <div class="carousel-item active">
-               <img src="${source}" class="d-block w-100 m-auto"
+            <div class="carousel-item">
+               <img src="${local.imagensprincipal[i]}" class="d-block w-100 m-auto"
                 alt="${local.nome}">
             </div>`
-        })
+        }
 
         var cardLocal =
             `<div class="card col-lg-3 col-md-6 col-xs-12 shadow p-3 mb-5 bg-white rounded border-0">
