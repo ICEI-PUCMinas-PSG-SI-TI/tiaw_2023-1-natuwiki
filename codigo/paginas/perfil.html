@@ -21,7 +21,7 @@
     <script src="https://kit.fontawesome.com/c54c3fd6be.js" crossorigin="anonymous"></script>
 
     <!--Folheto do Mapa-->
-    <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 </head>
 
 <body>
@@ -52,22 +52,28 @@
     <main>
         <section id="dados/pessoais">
 
-          
+
             <div class="container bootstrap">
                 <div class="panel-body inf-content">
                     <div class="row">
                         <div class="col-md-4">
-                            <img alt="" style="width:400px; height:350px;" title="" class="img-circle img-thumbnail isTooltip"
+                            <img alt="" style="width:400px; height:350px;" title=""
+                                class="img-circle img-thumbnail isTooltip"
                                 src="../img/Pagina Principal/user-profile-icon.png" data-original-title="Usuario">
                         </div>
                         <div class="col-md-6">
                             <strong>Dados Pessoais</strong><br>
                             <div class="table-responsive">
                                 <table id="user-information" class="table table-user-information">
-                                </table>  
-                                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-                                src="https://www.openstreetmap.org/export/embed.html?bbox=-44.35249328613281%2C-20.145561480419286%2C-43.70979309082032%2C-19.699485994162497&amp;layer=mapnik" 
-                                style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=11/-19.9227/-44.0311">Ver mapa ampliado</a></small>
+                                </table>
+                                <div id="my-map" style="width:800px; height:600px;">
+                                    <!--<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0"
+                                        marginwidth="0"
+                                        src="https://www.openstreetmap.org/export/embed.html?bbox=-44.35249328613281%2C-20.145561480419286%2C-43.70979309082032%2C-19.699485994162497&amp;layer=mapnik"
+                                        style="border: 1px solid black"></iframe><br /><small><a
+                                            href="https://www.openstreetmap.org/#map=11/-19.9227/-44.0311">Ver mapa
+                                            ampliado</a></small>-->
+                                </div>
                                 <div id="button-change" class="alterar">
                                     <a href="alterar.html">Alterar dados pessoais</a>
                                 </div>
@@ -120,7 +126,7 @@
         </section>
     </footer>
     <!--JavaScrip do Folheto do Mapa-->
-    <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     <script>
         const page = "perfil";
     </script>
