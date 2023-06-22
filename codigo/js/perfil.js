@@ -9,7 +9,32 @@ if(usuario == null || usuario.logado == false){
 window.onload = () => {
     
     pessoa = load_user_info(page);
+    load_map_info(pessoa);
 
+}
+
+function load_map_info(pessoa){
+    
+    fetch(`https://nominatim.openstreetmap.org/ui/search.html?city=${pessoa.cidade}&limit=1`)
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+    })
+
+    // Creating map options
+    var mapOptions = {
+        center: [-19.9227, -44.0311],
+        zoom: 10
+    }
+
+    // Creating a map object
+    var map = new L.map('my-map', mapOptions);
+
+    // Creating a Layer object
+    var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+
+    // Adding layer to the map
+    map.addLayer(layer);
 }
 
 function load_user_info() {
