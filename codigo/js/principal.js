@@ -1,7 +1,11 @@
 const usuario = JSON.parse(localStorage.getItem("usuario"));
 
 if (usuario == null || usuario.logado == false) {
-   // document.location.href = './paginas/login.html';
+    document.getElementById("pesquisa").style.display = "none"; // Esconde o campo de pesquisa
+    document.getElementsByClassName("botoes3")[0].style.display = "none"; // Esconde o botão de pesquisa
+} else {
+    document.getElementById("pesquisa").style.display = "block"; // Exibe o campo de pesquisa
+    document.getElementsByClassName("botoes3")[0].style.display = "block"; // Exibe o botão de pesquisa
 }
 
 window.onload = () => {
