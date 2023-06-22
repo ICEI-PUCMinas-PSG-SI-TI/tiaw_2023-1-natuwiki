@@ -5,18 +5,27 @@ window.onload = () => {
 }
 
 
-function validaDados(){
 
+function validaDados(e){
+
+    e.preventDefault();
+
+    nome = document.getElementById('username').value;
+    sobrenome = document.getElementById('sobrenome').value;
+    cidade = document.getElementById('cidade').value;
+    number = document.getElementById('number').value;
+    email = document.getElementById('email').value;
+    senha = document.getElementById('senha').value;
+    confirmacao = document.getElementById('confirmacao').value;
+    casadoTexto = document.getElementById('estado-civil').value;
+    filhos = document.getElementById('filhos').value;
+    transporte = document.getElementById('transporte').value;
+    experiencia_natureza = document.getElementById('caixa-nivel').value;
+    destinos = document.getElementById('destinos').value;
+   
+    casado = (casadoTexto === 'true');
     erro = false;
     limparMensagens();
-
-    var nome = document.getElementById('username').value;
-    var sobrenome = document.getElementById('sobrenome').value;
-    var cidade = document.getElementById('cidade').value;
-    var number = document.getElementById('number').value;
-    var email = document.getElementById('email').value;
-    var senha = document.getElementById('senha').value;
-    var confirmacao = document.getElementById('confirmacao').value;
 
     if(nome == ''){
         paragrafo = document.getElementById('erro_nome');
@@ -47,19 +56,17 @@ function validaDados(){
         erro_email.textContent = 'Email inválido';
         erro = true;
     }
-
     
     if(senha == ''){
-
-    }
-
-    if(confirmacao == ''){
-
+        paragrafo = document.getElementById('erro_senha');
+        erro_senha.textContent = 'Senha não pode ser vazia';
+        erro = true;
     }
 
     if(senha != confirmacao){
         paragrafo = document.getElementById('erro_senha');
         paragrafo.textContent = 'As senhas não correspondem';
+        erro = true;
     }
 
     cadastrar(erro);
@@ -68,8 +75,51 @@ function validaDados(){
 
 function cadastrar(erro){
 
-    if(!erro){
-        //
+    if(!erro){  
+
+        var pessoa = {
+
+            "nome" : nome,
+            "sobrenome": sobrenome,
+            "cidade": cidade,
+            "celular": number,
+            "email": email,
+            "casado": casado,
+            "filhos": filhos,
+            "experiencia_natureza": experiencia_natureza,
+            "destinos_favoritos": destinos,
+            "transporte": transporte,
+            "usuario": {
+                "senha": senha,
+                "login": email
+            }
+
+        }
+
+        var jaExiste = false;
+        pessoas = JSON.parse(localStorage.getItem('pessoas'));
+
+        pessoas.forEach(p => {
+            
+            if(p.email == pessoa.email){
+                alert('Usuário existente')
+                jaExiste = true;
+            }
+        });
+
+        ids = pessoas.map(object => {
+            return object.id;
+        })
+
+        ultimoId = Math.max(...ids);
+
+        if(!jaExiste){
+            pessoa.id = ultimoId + 1;
+            pessoas.push(pessoa);
+
+            localStorage.setItem('pessoas', JSON.stringify(pessoas));
+        }
+
     }
 }
 
