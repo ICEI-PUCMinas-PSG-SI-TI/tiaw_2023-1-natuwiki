@@ -1,16 +1,8 @@
-const usuario = JSON.parse(localStorage.getItem("usuario"));
-
 const dadosLocais = JSON.parse(localStorage.getItem('locais'));
 
 window.onload = () => {
 
     fillPlacesCards(dadosLocais);
-
-    if (usuario == null || usuario.logado == false) {
-        document.getElementsByClassName("pesquisa-rapida")[0].style.display = "none";
-    } else {
-        document.getElementsByClassName("pesquisa-rapida")[0].style.display = "block";
-    }
 
     document.getElementById("anchor").addEventListener('click', e => {
         pesquisa();
@@ -23,6 +15,7 @@ function shuffleArray(array) {
         .sort((a, b) => a.sort - b.sort)
         .map(({ value }) => value)
 }
+
 
 function fillPlacesCards(dadosLocais) {
     var locais = shuffleArray(dadosLocais);
@@ -78,5 +71,22 @@ function fillPlacesCards(dadosLocais) {
             </div>`
 
         placesContainer.innerHTML += cardLocal;
+    }
+}
+
+function pesquisa() {
+    input = document.getElementById('pesquisa').value;
+
+    if (input.length == 0) {
+        alert('Pesquisa inválida')
+    } else {
+
+        locaisFiltrados = dadosLocais.filter
+            (local => (
+                (local.nome.toLowerCase()).includes(input.toLowerCase()))
+            )
+
+        fillPlacesCards(locaisFiltrados);
+
     }
 }

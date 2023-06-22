@@ -260,7 +260,7 @@
   }
 
   .pesquisa-rapida{
-    display: none;
+    display: none !important;
   }
 
   .pesquisa-rapida1{
