@@ -2,6 +2,7 @@ const usuario = JSON.parse(localStorage.getItem("usuario"));
 
 const dadosLocais = JSON.parse(localStorage.getItem('locais'));
 
+console.log(dadosLocais)
 window.onload = () => {
 
     fillPlacesCards(dadosLocais);

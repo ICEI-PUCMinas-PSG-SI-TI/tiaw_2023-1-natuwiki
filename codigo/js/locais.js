@@ -1,4 +1,4 @@
-dadosLocais = [
+todosLocais = [
     {
         "id": 1,
         "nome": "Cachoeira Alta Vale de Altamira",
@@ -112,4 +112,4 @@ dadosLocais = [
 ]
 
 if(localStorage.getItem('locais') == null)
-    localStorage.setItem('locais', JSON.stringify(dadosLocais));
+    localStorage.setItem('locais', JSON.stringify(todosLocais));
