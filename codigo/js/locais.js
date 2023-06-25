@@ -22,7 +22,8 @@ todosLocais = [
                 "autor": "Vanessa Silva",
                 "comentario": "A Cachoeira Alta é de fácil acesso e tem sua beleza e imponência mais de 100 metros de altura com água limpa." 
             }
-        ]
+        ], 
+        "categoria": "local"
     },
     {
         "id": 2,
@@ -43,7 +44,8 @@ todosLocais = [
         "contato": {
             email: "claudiadrumond54@gmail.com",
             telefone: "(31)99460 5749"
-        }
+        },
+        "categoria": "local"
     }, {
         "id": 3,
         "nome": "Trilha Cachoeira do Lageado",
@@ -62,7 +64,8 @@ todosLocais = [
                 "autor": "Nivaldo Lima",
                 "comentario": "Fiz o passei até a cachoeira alta em Nova União e foi um passeio sensacional. Durante o trajeto nos indicaram o bar da Sandra é um bar chegando na cachoeira que fornece porções e bebidas com preços muito bons. A cachoeira é maravilhosa, a trilha para chegar nela é bem rápida coisa de 10 minutos e já chega na queda d'água e no trajeto tem 3 poços bem gostosos de nadar."
             },
-        ]
+        ],
+        "categoria": "local"
     }, {
         "id": 4,
         "nome": "Parque da Cachoeira Congonhas",
@@ -82,7 +85,8 @@ todosLocais = [
                 "autor": "Angela Martin",
                 "comentario": "Fiz uma visita com minha família ao parque da cachoeira em Congonhas no último dia 20. Local bem cuidado, a cachoeira possui salva-vidas, o que nos deixa mais a vontade com nossos filhos, a área de churrasco estava bem cheia então preferimos fazer um churrasco com a nossa própria churrasqueira na área de camping. Preço do camping é bastante atrativo."
             }
-        ]
+        ],
+        "categoria": "local"
     }, {
         "id": 5,
         "nome": "Cachoeira Véu da Noiva - Serra do Cipó",
@@ -106,6 +110,28 @@ todosLocais = [
             {
                 "autor": "Kevin Malone",
                 "comentario": "A Cachoeira Véu da Noiva na Serra do Cipó é um verdadeiro espetáculo da natureza. A queda d'água majestosa forma uma cortina de água que desliza pelas rochas, criando um cenário mágico e revigorante. O som relaxante da água caindo e a energia vibrante do local proporcionam uma experiência única e revitalizante. É um lugar perfeito para se conectar com a natureza, refrescar-se nas águas cristalinas e contemplar a beleza indescritível desse tesouro escondido na Serra do Cipó." 
+            }
+        ],
+        "categoria": "local"
+    }, {
+        "id" : 6,
+        "nome": "Amazonas Palace Hotel",
+        "endereco": "Av. Amazonas, 120, Centro de Belo Horizonte",
+        "descricao": "O Amazonas Palace Hotel é um estabelecimento acolhedor e confortável, idealmente localizado no coração da cidade. Com uma fachada convidativa, o hotel oferece uma experiência agradável desde o momento em que os hóspedes entram.Os quartos do hotel são aconchegantes e bem equipados, proporcionando um ambiente relaxante para descanso. Com decoração moderna e funcional, cada quarto conta com comodidades como televisão, ar-condicionado, banheiro privativo e Wi-Fi gratuito, garantindo o conforto e a conectividade dos hóspedes.",
+        "area": "29m²",
+        "cama": "2 lugares (casal)",
+        "valor": "R$213",
+        "alimentacao": "Café da manhã incluso",
+        "categoria": "estadia",
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/9/98/Amazonas_Palace_Hotel_-_Belo_Horizonte.JPG",
+        "comentarios":[
+            {
+                "autor": "Kaylee Jones",
+                "comentario": "Fui bem atendido pela recepção do local. Bom serviço de quarto também."
+            },
+            {
+                "autor": "Theodore Lasso",
+                "comentario": "Ótima experiência na estadia do AFC Richmond no hotel, ficamos relaxados no fim de semana." 
             }
         ]
     }
