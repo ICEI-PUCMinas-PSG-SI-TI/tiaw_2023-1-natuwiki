@@ -66,6 +66,7 @@
                             <div class="table-responsive">
                                 <table id="user-information" class="table table-user-information">
                                 </table>
+                                <p id="endereco" style="color: red"></p>
                                 <div id="my-map" style="width:800px; height:600px;">
                                     <!--<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0"
                                         marginwidth="0"
@@ -126,11 +127,13 @@
         </section>
     </footer>
     <!--JavaScrip do Folheto do Mapa-->
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <!--<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>-->
     <script>
         const page = "perfil";
     </script>
     <script src="../js/perfil.js"></script>
+    <script src="../js/mapa.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFuc17m54n3R7VXpvSYkd_qcDO6Y6lRt0&libraries=places&callback=initMap"></script>
 </body>
 
 </html>
