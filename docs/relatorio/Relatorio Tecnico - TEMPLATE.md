@@ -6,11 +6,11 @@ Sistemas de informação
 
 ## Participantes
 
-Danielle Santos Torres
-Davi Martins Freitas de Oliveira Fonseca
-Gabriel Hubner Bastos Athaide
-Gabriel Santos da Silva
-Hayanne Santos da Silva
+Danielle Santos Torres |
+Davi Martins Freitas de Oliveira Fonseca |
+Gabriel Hubner Bastos Athaide |
+Gabriel Santos da Silva |
+Hayanne Santos da Silva |
 Pedro Ribeiro Canuto
 
 # Estrutura do Documento
