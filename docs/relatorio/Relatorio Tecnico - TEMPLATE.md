@@ -163,8 +163,9 @@ A tabela que segue apresenta os requisitos funcionais do projeto.
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Permitir que o usuário busque locais pelo nome | ALTA | 
+|RF-002| Permitir que o usuário acesse informações detalhadas sobre os locais ao encontrar um de seu interesse | ALTA | 
+|RF-002| Permitir que o usuário se cadastre e altere seus dados, quando necessário | ALTA |
 
 # Projeto da Solução
 
@@ -174,7 +175,7 @@ A tabela que segue apresenta os requisitos funcionais do projeto.
 
 
 ## Mapa de navegação
-> ![Exemplo de Diagrama de Navegação](images/userflow.jpg)
+##> ![Exemplo de Diagrama de Navegação](images/userflow.jpg)
 
 # Conclusões
 
