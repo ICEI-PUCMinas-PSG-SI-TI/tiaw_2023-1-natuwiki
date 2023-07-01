@@ -174,9 +174,6 @@ A tabela que segue apresenta os requisitos funcionais do projeto.
 > ![Exemplo de Link para Wireframe](images/main.png)
 
 
-## Mapa de navegação
-##> ![Exemplo de Diagrama de Navegação](images/userflow.jpg)
-
 # Conclusões
 
 
