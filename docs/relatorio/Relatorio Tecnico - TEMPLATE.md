@@ -58,13 +58,11 @@ preços e informações sobre possíveis aventuras que possam ser disponibilizad
 
 A NatuWiki possui como público-alvo amantes da natureza, 
 pessoas que eu seu interior sentem prazer e alegria em estar em contato com a natureza,
-independente se é em momentos de lazer, descanso ou aventura.
+independente se é em momentos de lazer, descanso ou aventura, mas encontram dificuldades no acesso à informações relevantes sobre os locais que desejam visitar ao planejar uma viagem, por exemplo.
 Tais pessoas, na maioria das vezes, já possuíram contato com a natureza e por isso
-desenvolveram interesse em compartilhar momentos nesses ambientes.
+desenvolveram interesse em compartilhar momentos nesses ambientes, e portanto, a descoberta de informações relevantes dos ambientes, locais e acomodações são necessárias para alcançar o desejo de desfrutar um tempo na natureza.
 
 # Especificações do Projeto
-
-......  COLOQUE AQUI O SEU TEXTO ......
 
 > Apresente uma visão geral do que será abordado nesta parte do
 > documento, enumerando as técnicas e/ou ferramentas utilizadas para
@@ -72,7 +70,7 @@ desenvolveram interesse em compartilhar momentos nesses ambientes.
 
 ## Personas
 
-Para a elaboração da natuwiki foi pensado duas personas:
+Para a elaboração da natuwiki foram pensadas duas personas:
 
 Persona 1
 Nome: Anna Beatriz
