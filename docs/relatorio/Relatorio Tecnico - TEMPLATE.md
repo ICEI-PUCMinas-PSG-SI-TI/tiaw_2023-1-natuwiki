@@ -165,7 +165,7 @@ A tabela que segue apresenta os requisitos funcionais do projeto.
 |------|-----------------------------------------|----|
 |RF-001| Permitir que o usuário busque locais pelo nome | ALTA | 
 |RF-002| Permitir que o usuário acesse informações detalhadas sobre os locais ao encontrar um de seu interesse | ALTA | 
-|RF-002| Permitir que o usuário se cadastre e altere seus dados, quando necessário | ALTA |
+|RF-003| Permitir que o usuário se cadastre e altere seus dados, quando desejar | ALTA |
 
 # Projeto da Solução
 
