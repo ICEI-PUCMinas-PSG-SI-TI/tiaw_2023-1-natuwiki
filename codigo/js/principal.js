@@ -16,6 +16,8 @@ window.onload = () => {
         pesquisa(e);
     })
 
+    carregarComentarios();
+
 }
 
 function shuffleArray(array) {
@@ -100,10 +102,6 @@ function fillPlacesCards(dadosLocais) {
     }
 }
 
-function fillFilteredPlaces(locaisFiltrados) {
-
-}
-
 function pesquisa(e) {
 
     input = document.getElementById('pesquisa').value;
@@ -114,4 +112,32 @@ function pesquisa(e) {
     } else {
         document.getElementById('anchor').href = `/codigo/paginas/pesquisa.html?query=${input}`
     }
+}
+
+function carregarComentarios() {
+
+    let array = shuffleArray(dadosLocais);
+
+    let algunsComentarios = [];
+
+    let aux = 0;
+    while (algunsComentarios.length < 3) {
+        let max = Math.round(array[aux].comentarios.length);
+        let random = Math.floor((Math.random() * (max)));
+        algunsComentarios.push(array[aux].comentarios[random]);
+        aux++;
+    }
+
+    let comentariosContainer = document.getElementById('comentarios-container');
+
+    algunsComentarios.forEach(comentario => {
+        htmlComentario = `
+    <div class="comentario mb-3">
+    <i id="autor" class="fa-solid fa-user d-flex" style="color:black"><p class="px-2">${comentario.autor}</p></i>
+    <!--<p id="titulo-comentario" class="titulo-comentario fw-bold mb-0"></p>!-->
+    <p id="conteudo">${comentario.comentario}</p>
+    </div>`
+
+        comentariosContainer.innerHTML += htmlComentario;
+    })
 }

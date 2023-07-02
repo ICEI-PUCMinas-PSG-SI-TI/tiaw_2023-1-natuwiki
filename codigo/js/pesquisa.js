@@ -55,7 +55,7 @@ function fillPlacesCards(array) {
             </div>`
             }
 
-            linkDetalhe = `<a href="./paginas/detalhe.html?id=${local.id}">
+            linkDetalhe = `<a href="./detalhe.html?id=${local.id}">
                              <p class="mt-2">Leia mais</p>
                            </a>`
         }
@@ -67,7 +67,7 @@ function fillPlacesCards(array) {
              alt="${local.nome}">
             </div>`
 
-            linkDetalhe = `<a href="./paginas/acomodacoes.html?id=${local.id}">
+            linkDetalhe = `<a href="./acomodacoes.html?id=${local.id}">
             <p class="mt-2">Leia mais</p>
              </a>`
         }

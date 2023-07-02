@@ -11,17 +11,15 @@ window.onload = () => {
         var email = {"field":"email", "value": document.getElementById('email').value};
         var filhos = {"field":"filhos", "value": document.getElementById('filhos').value};
         var cidade = {"field":"cidade", "value": document.getElementById('cidade').value};
-        var experiencia = {"field":"experiencia_natureza", "value": document.getElementById('experiencia').value};
-        var transporte = {"field":"transporte", "value": document.getElementById('transporte').value};
 
-        fields = [nome, sobrenome, telefone, email, filhos, cidade, experiencia, transporte];
+        fields = [nome, sobrenome, telefone, email, filhos, cidade];
         
         validateNotEmpty(fields, pessoa);
 
         pessoas = JSON.parse(localStorage.getItem('pessoas'));
 
-        for(let i = 1; i <= pessoas.length; i++){
-            if(pessoas[i].id = pessoa.id){
+        for(let i = 0; i < pessoas.length; i++){
+            if(pessoas[i].id == pessoa.id){
                 pessoas[i] = pessoa;
                 break;
             }
@@ -59,99 +57,13 @@ function validateNotEmpty(fields, pessoa){
 
 function load_user_info() {
     var pessoa = JSON.parse(localStorage.getItem("dadosUsuario"));
-    
-    user_table_info = `<tbody>
-        <tr>
-            <td>
-                <strong>
-                    <span class="glyphicon glyphicon-user  text-primary"></span>
-                    Nome
-                </strong>
-            </td>
-            <td>
-                <input id="first-name" required value=${pessoa.nome}></input>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>
-                    <span class="glyphicon glyphicon-cloud text-primary"></span>
-                    Sobrenome
-                </strong>
-            </td>
-            <td>
-                <input id="last-name" required value=${pessoa.sobrenome}></input>
-            </td>
-        </tr>
 
-        <tr>
-            <td>
-                <strong>
-                    <span class="glyphicon glyphicon-eye-open text-primary"></span>
-                    Contato
-                </strong>
-            </td>
-            <td>
-                <input id="telefone" required value=${pessoa.celular}></input>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>
-                    <span class="glyphicon glyphicon-envelope text-primary"></span>
-                    Email
-                </strong>
-            </td>
-            <td>
-                <input type="email" id="email" required value=${pessoa.email}></input>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>
-                    <span class="glyphicon glyphicon-calendar text-primary"></span>
-                    Cidade
-                </strong>
-            </td>
-            <td>
-                <input id="cidade" required value=${pessoa.cidade}></input>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>
-                    <span class="glyphicon glyphicon-calendar text-primary"></span>
-                    Experiência natureza
-                </strong>
-            </td>
-            <td>
-                <input id="experiencia" required value=${pessoa.experiencia_natureza}></input>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>
-                    <span class="glyphicon glyphicon-calendar text-primary"></span>
-                    Nº filhos
-                </strong>
-            </td>
-            <td>
-                <input id="filhos" required value=${pessoa.filhos}></input>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>
-                    <span class="glyphicon glyphicon-calendar text-primary"></span>
-                    Transporte
-                </strong>
-            </td>
-            <td>
-                <input id="transporte" required value=${pessoa.transporte}></input>
-            </td>
-        </tr>
-    </tbody>`
+    document.getElementById('first-name').value = pessoa.nome;
+    document.getElementById('email').value = pessoa.email;
+    document.getElementById('telefone').value = pessoa.celular;
+    document.getElementById('cidade').value = pessoa.cidade;
+    document.getElementById('last-name').value = pessoa.sobrenome;
+    document.getElementById('filhos').value = pessoa.filhos;
 
-    window.document.getElementById('user-information').innerHTML = user_table_info;
     return pessoa;
 }

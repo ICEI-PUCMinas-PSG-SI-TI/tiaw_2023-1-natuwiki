@@ -383,19 +383,18 @@ p {
 .comentarios div {
   margin-bottom: 10px;
 }
-#enviar{
-   
-    width: 100%;
-    background-color: transparent;
-    height: 40px;
-    border: none;
-    font-size: 1.2em;
-    border-radius: 20px;
-    outline: none;
-    cursor: pointer;
-    color:#00BF63
 
+#enviar {
+  background-color: var(--background-third);
+  color: white;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+  transition: all .5s;
+  float: right;
 }
-button{
-  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+#enviar:hover {
+  opacity: .8;
 }
+
