@@ -23,3 +23,6 @@ Também acessível na página do repositório > aba Projects > NatuWiki - Kanban
 
 ## Instruções para uso
 tiaw_2023-1-natuwiki/codigo/index.html
+
+## Link da apresentação
+https://www.canva.com/design/DAFm2JSdq4Q/XUSiHZ6eI48rWmFwQe0dVQ/view?utm_content=DAFm2JSdq4Q&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
